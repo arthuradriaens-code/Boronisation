@@ -1,0 +1,1 @@
+p 'ErosionRates/ErosionRates25MHzIC+EC.csv' u 2:6 title "25MHz IC + 2000W EC", "ErosionRates/ErosionRates25MHzPureIC.csv" u 2:6 title "25MHz Pure IC" , 'ErosionRates/ErosionRates40MHzPureIC.csv' u 2:6 title "40MHz Pure IC", 'ErosionRates/ErosionRates40MHzIC+EC.csv' u 2:6 title "40MHz IC + 2000W EC"

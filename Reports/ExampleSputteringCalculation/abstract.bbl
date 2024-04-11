@@ -1,0 +1,16 @@
+\providecommand{\newblock}{}
+\begin{thebibliography}{1}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{{\tt #1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\providecommand{\eprint}[2][]{\url{#2}}
+% Bibliography created with iopart-num v2.1
+% /biblio/bibtex/contrib/iopart-num
+
+\bibitem{RustBCA}
+Drobny J~T and Curreli D 2021 {\em Journal of Open Source Software\/} {\bf 6} 3298 \urlprefix\url{https://doi.org/10.21105/joss.03298}
+
+\bibitem{eckstein2013computer}
+Eckstein W 2013 {\em Computer Simulation of Ion-Solid Interactions\/} Springer Series in Materials Science (Springer Berlin Heidelberg) ISBN 9783642735134 \urlprefix\url{https://books.google.de/books?id=4h3rCAAAQBAJ}
+
+\end{thebibliography}

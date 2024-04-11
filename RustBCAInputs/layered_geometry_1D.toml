@@ -1,6 +1,6 @@
 [options]
-name = "2000.0eV_0.0001deg_He_TiO2_Al_Si"
-track_trajectories = false
+name = "RustBCAResults/HeTiO2AlSi/2000.0eV_0.0001deg_He_TiO2_Al_Si"
+track_trajectories = true
 track_recoils = true
 track_recoil_trajectories = false
 write_buffer_size = 8000
@@ -13,25 +13,10 @@ interaction_potential = [["KR_C"]]
 scattering_integral = [["MENDENHALL_WELLER"]]
 use_hdf5 = false
 root_finder = [[{"NEWTON"={max_iterations=100, tolerance=1E-6}}]]
-num_threads = 4
+num_threads = 6
 num_chunks = 10
-track_displacements = false
-track_energy_losses = false
-energy_min = 0.0
-energy_max = 2000.0
-energy_num = 20
-angle_min = 0.0
-angle_max = 90.0
-angle_num = 20
-x_min = 0.0
-y_min = -0.1
-z_min = -0.1
-x_max = 0.1
-y_max = 0.1
-z_max = 0.1
-x_num = 20
-y_num = 20
-z_num = 20
+track_displacements = true
+track_energy_losses = true
 
 [particle_parameters]
 length_unit = "1e-6"
