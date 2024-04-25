@@ -1,0 +1,43 @@
+\providecommand{\newblock}{}
+\begin{thebibliography}{10}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{{\tt #1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\providecommand{\eprint}[2][]{\url{#2}}
+% Bibliography created with iopart-num v2.1
+% /biblio/bibtex/contrib/iopart-num
+
+\bibitem{PHILIPPS2011S2}
+Philipps V 2011 {\em Journal of Nuclear Materials\/} {\bf 415} S2--S9 ISSN 0022-3115 proceedings of the 19th International Conference on Plasma-Surface Interactions in Controlled Fusion \urlprefix\url{https://www.sciencedirect.com/science/article/pii/S0022311511001589}
+
+\bibitem{Tungsten}
+Neu R, Dux R, Kallenbach A, Pütterich T, Balden M, Fuchs J, Herrmann A, Maggi C, O'Mullane M, Pugno R, Radivojevic I, Rohde V, Sips A, Suttrop W, Whiteford A and the ASDEX Upgrade~team 2005 {\em Nuclear Fusion\/} {\bf 45} 209 \urlprefix\url{https://dx.doi.org/10.1088/0029-5515/45/3/007}
+
+\bibitem{JWinter_1996}
+Winter J 1996 {\em Plasma Physics and Controlled Fusion\/} {\bf 38} 1503 \urlprefix\url{https://dx.doi.org/10.1088/0741-3335/38/9/001}
+
+\bibitem{ASDEXBoronisation}
+{The ASDEX Team}, {The ICRH Team}, {The LH Team}, {The NI Team}, Schneider U, Poschenrieder W, Bessenrodt-Weberpals M, Hofmann J, Kallenbach A, Krieger K, Müller E, Niedermeyer H, Ryter F, Roth J, Söldner F, Stäbler A, Steuer K, Vollmer O and Wagner F 1990 {\em Journal of Nuclear Materials\/} {\bf 176-177} 350--356 ISSN 0022-3115 \urlprefix\url{https://www.sciencedirect.com/science/article/pii/002231159090071T}
+
+\bibitem{DIII-DBoronisation}
+Jackson G, Winter J, Burrell K, DeBoo J, Greenfield C, Groebner R, Hodapp T, Holtrop K, Kellman A, Lee R, Lippmann S, Moyer R, Phillips J, Taylor T, Watkins J and West W 1992 {\em Journal of Nuclear Materials\/} {\bf 196-198} 236--240 ISSN 0022-3115 plasma-Surface Interactions in Controlled Fusion Devices \urlprefix\url{https://www.sciencedirect.com/science/article/pii/S0022311506800383}
+
+\bibitem{EASTBoronisation}
+Xu W, Sun Z, Maingi R, Zuo G, Yu Y, Li C, Guan Y, Zhou Z, Meng X, Huang M, Zhang L, Gao W and Hu J 2023 {\em Nuclear Materials and Energy\/} {\bf 34} 101359 ISSN 2352-1791 \urlprefix\url{https://www.sciencedirect.com/science/article/pii/S235217912200240X}
+
+\bibitem{TEXTORBoronisation}
+Winter J, Esser H, Könen L, Philipps V, Reimer H, Seggern J, Schlüter J, Vietzke E, Waelbroeck F, Wienhold P, Banno T, Ringer D and Vepřek S 1989 {\em Journal of Nuclear Materials\/} {\bf 162-164} 713--723 ISSN 0022-3115 \urlprefix\url{https://www.sciencedirect.com/science/article/pii/0022311589903528}
+
+\bibitem{TOMAS}
+Goriaev A, Wauters T, Möller S, Brakel R, Brezinsek S, Buermans J, Crombé K, Dinklage A, Habrichs R, Höschen D, Krause M, Kovtun Y, López-Rodríguez D, Louche F, Moon S, Nicolai D, Thomas J, Ragona R, Rubel M, Rüttgers T, Petersson P, Brunsell P, Linsmeier C and Van~Schoor M 2021 {\em Review of Scientific Instruments\/} {\bf 92} 023506 ISSN 0034-6748 (\textit{Preprint} \eprint{https://pubs.aip.org/aip/rsi/article-pdf/doi/10.1063/5.0033229/10050393/023506\_1\_online.pdf}) \urlprefix\url{https://doi.org/10.1063/5.0033229}
+
+\bibitem{DOUAI}
+Douai D, Kogut D, Wauters T, Brezinsek S, Hagelaar G, Hong S, Lomas P, Lyssoivan A, Nunes I, Pitts R, Rohde V and {de Vries} P 2015 {\em Journal of Nuclear Materials\/} {\bf 463} 150--156 ISSN 0022-3115 pLASMA-SURFACE INTERACTIONS 21 \urlprefix\url{https://www.sciencedirect.com/science/article/pii/S0022311514009763}
+
+\bibitem{RustBCA}
+Drobny J~T and Curreli D 2021 {\em Journal of Open Source Software\/} {\bf 6} 3298 \urlprefix\url{https://doi.org/10.21105/joss.03298}
+
+\bibitem{eckstein2013computer}
+Eckstein W 2013 {\em Computer Simulation of Ion-Solid Interactions\/} Springer Series in Materials Science (Springer Berlin Heidelberg) ISBN 9783642735134 \urlprefix\url{https://books.google.de/books?id=4h3rCAAAQBAJ}
+
+\end{thebibliography}

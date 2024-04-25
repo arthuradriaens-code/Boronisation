@@ -1,0 +1,47 @@
+This is BibTeX, Version 0.99d (TeX Live 2024/Arch Linux)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: abstract.aux
+The style file: iopart-num.bst
+Database file #1: Bibliography/sources.bib
+Reallocated wiz_functions (elt_size=8) to 6000 items from 3000.
+You've used 11 entries,
+            3033 wiz_defined-function locations,
+            714 strings with 8410 characters,
+and the built_in function-call counts, 20865 in all, are:
+= -- 2565
+> -- 385
+< -- 0
++ -- 159
+- -- 138
+* -- 1594
+:= -- 2220
+add.period$ -- 0
+call.type$ -- 11
+change.case$ -- 3
+chr.to.int$ -- 0
+cite$ -- 11
+duplicate$ -- 1787
+empty$ -- 1847
+format.name$ -- 126
+if$ -- 4862
+int.to.chr$ -- 0
+int.to.str$ -- 11
+missing$ -- 209
+newline$ -- 43
+num.names$ -- 11
+pop$ -- 296
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 99
+stack$ -- 0
+substring$ -- 3683
+swap$ -- 450
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 220
+width$ -- 13
+write$ -- 121
