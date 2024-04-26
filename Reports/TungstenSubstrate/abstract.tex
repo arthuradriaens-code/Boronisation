@@ -21,12 +21,11 @@ The interior of a fusion reactor is extremely hostile, as such a good material
 needs to be chosen for plasma facing components (PFC), tungsten is increasingly
 favoured over other materials due to its unique combination of properties such
 as low erosion rate, low tritium retention and resistance to heat-induced
-stress \cite{PHILIPPS2011S2}\cite{Tungsten}.  But there is one big drawback of
+stress \cite{PHILIPPS2011S2}\cite{Tungsten}.  But there are two big drawbacks to
 using tungsten as a PFC: As it has a very high Z-value, if it does get
 sputtered, high amounts of radiation loss may occur due to brehmstrahlung
-\cite{JWinter_1996}, we'd also like good hydrogen recycling by wall pumping for
-density control, a way of capturing impurities like oxygen in the plasma and easy cleanup
-afterwards trough wall conditioning.  We can get the "best of both worlds" by
+\cite{JWinter_1996} and second it's a very bad oxygen getterer which is the most deleterious
+of all impurities encountered in a fusion device. We can get the "best of both worlds" by
 coating our tungsten with a small ($<$100nm) layer of a low Z-material.
 Previously Beryllium was considered the main candidate but due to it's high
 toxicity and difficulty of handling the now most favored candidate is boron.
@@ -39,18 +38,24 @@ this paper tries to fill.
 \subsection{Experimental setup}
 \begin{figure}[ht]
     \centering
-    \includegraphics[height=0.24\textwidth]{figures/Sample.pdf}
-    \includegraphics[height=0.24\textwidth]{figures/mask.pdf}
+    \includegraphics[height=0.33\textwidth]{figures/Sample.pdf}
+    \includegraphics[height=0.33\textwidth]{figures/mask.pdf}
     \caption{The mask (right figure) is made out of tungsten and can contain 8 samples (left figure), 
     the 10x10mm top of the samples are coated with boron and attached in the mask such that it is facing towards    the plasma in the vessel}
     \label{fig:samples+mask}
 \end{figure}
-The TOMAS machine \cite{TOMAS} is equiped with a monopole ICWC antenna which
-will be set to operate at 50MHz, closely mimicking the 53MHz that will be used
-at ITER.  The mask containing the samples (see figure \ref{fig:samples+mask})
-is mounted on a movable arm.  We'll modify the pressure in such a way that the
-neutrals pressure (i.e the observed pressure during the discharge) is $10^{-5}$
-mbar, closely mimicking what was used in JET and will be used in ITER \cite{DOUAI}.
+One may isolate the boron-tungsten erosion by using ion beams, the obvious
+advantage being that the experiment is simpler with easily chosen parameters.
+But the disadvantage is that co-operative effects, which may occur only when a
+plasma is present, will not be observed \cite{McCRACKEN}. The TOMAS machine
+\cite{TOMAS} will be used as it is capable of forming a full plasma during an
+ICRH discharge and thus introducing these co-operative effects.  It is equiped
+with a monopole ICWC antenna which will be set to operate at 50MHz, closely
+mimicking the 53MHz that will likely be used at ITER.  The mask containing the
+samples (see figure \ref{fig:samples+mask}) is mounted on a movable arm.  We'll
+modify the pressure in such a way that the neutrals pressure (i.e the observed
+pressure during the discharge) is $10^{-5}$ mbar, closely mimicking what was
+the case in JET and will likely be the case in ITER \cite{DOUAI}.
 \section{Erosion estimation using neutrals}
 \subsection{Explanation of the theory}
 Sputtering due to ICWC is said to be mainly caused by high energy neutrals (citation needed), as such 
