@@ -37,6 +37,9 @@ Goriaev A, Wauters T, Möller S, Brakel R, Brezinsek S, Buermans J, Crombé K, D
 \bibitem{DOUAI}
 Douai D, Kogut D, Wauters T, Brezinsek S, Hagelaar G, Hong S, Lomas P, Lyssoivan A, Nunes I, Pitts R, Rohde V and {de Vries} P 2015 {\em Journal of Nuclear Materials\/} {\bf 463} 150--156 ISSN 0022-3115 pLASMA-SURFACE INTERACTIONS 21 \urlprefix\url{https://www.sciencedirect.com/science/article/pii/S0022311514009763}
 
+\bibitem{Bi-Maxwell}
+Moseev D and Salewski M 2019 {\em Physics of Plasmas\/} {\bf 26} 020901 ISSN 1070-664X (\textit{Preprint} \eprint{https://pubs.aip.org/aip/pop/article-pdf/doi/10.1063/1.5085429/19905566/020901\_1\_1.5085429.pdf}) \urlprefix\url{https://doi.org/10.1063/1.5085429}
+
 \bibitem{RustBCA}
 Drobny J~T and Curreli D 2021 {\em Journal of Open Source Software\/} {\bf 6} 3298 \urlprefix\url{https://doi.org/10.21105/joss.03298}
 
