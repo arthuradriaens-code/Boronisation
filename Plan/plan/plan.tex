@@ -1,0 +1,100 @@
+\documentclass{article}
+\usepackage{amsmath}
+\title{Research plan}
+\author{Arthur Adriaens}
+
+\begin{document}
+\maketitle
+
+\section{Thickness and density estimation}
+We wish to know how the various wall conditioning schemes affect the PFM, to
+this end we need to know both the sample thickness before and after and it's
+density.  We want to know the density as to see how it is dependent on the
+substrate and to infer how many atoms got sputtered.
+\subsection{Boronized Tungsten}
+My proposal for measuring the thickness
+of the samples would be to use three methods, the first two methods concern a
+general estimate of the thickness whilst the third would be sample-specific.
+We first half-coat one sample by applying sticky tape during coating and
+peeling it off afterwards, enabling the first method: the use of a profilometer
+to determine the jump in height. The second method which we'll also apply on
+this half-coated sample is the use of a SEM either by drilling small holes in
+the coated surface and determine the thickness that way or looking at the side
+of the sample.  The third method is to use the ellipsometer in the mirror lab,
+this last method is also what we'll be using for the normal samples, it is
+however good to have many thickness estimates of the half-coated sample as
+we'll need it later and as it's a good check to see if the ellipsometry
+measurements are accurate.  Note that most of these techniques (especially the
+ellipsometry) will only be possible if the tungsten surface is polished to within
+a few nanometers.
+ \vspace{0.2cm} \\
+To now measure the density we'll perform ion beam analysis on the half coated
+sample. To see how this works, follow the following train of thought: After
+analysing the experimental data from the IBA (ERDA) we'd know that there are x amount
+of $B^{10}$ atoms per cm$^2$ and y amount of $B^{11}$ atoms per cm$^2$ on the
+surface of the sample, using the mass of both of these isotopes and the
+measured thickness (of which we have 3 independent measurements), we can infer
+the density:
+\begin{equation}
+    \rho = \frac{1}{d \times 1 cm^2} \left( x \times \text{massa }B^{10}   \text{ isotope} + y \times \text{massa }B^{11}   \text{ isotope}\right)
+\end{equation}
+Assuming this density to hold for the other samples, we can infer how many atoms 
+were sputtered from the change in thickness which we'll measure using ellipsometry.
+\subsection{Boronized Graphite}
+My proposal for measuring the thickness of the boron layer on graphite would be
+to use two methods, we'll also be using the half-coated sample enabling the use
+of a profilometer. The second method which we'll apply in conjunction is by
+using the ellipsometer in the mirror lab, note that the SEM wouldn't be able to
+see the difference between carbon and boron and is thus not possible to use
+here. We then proceed as mentioned for tungsten, inferring the density using
+IBA.
+\section{Doping estimation}
+As we'd later want to measure the outgassing efficiency of the various wall conditioning 
+systems, we'd like to dope the samples with some atoms (e.g deuterium) and measure the concentration
+before and after the various wall conditioning schemes.
+We'll probably measure these concentrations using ERDA.
+\section{Exposure: Erosion rate}
+We'd like to expose the samples to either hydrogen, helium or mixed hydrogen
+and helium. Each under different wall conditioning regimes, either Glow Discharge,
+Ion Cyclotron Wall Conditioning, Electron Cyclotron Wall Conditioning or ICWC and ECWC
+at the same time. We'll first do some spectroscopy to see the amount of impurities in
+our plasma (if any are visible, our spectrometer is quite low-resolution). And then
+expose the pure boron to test the erosion rate with different powers.
+\subsection{ICWC}
+In TOMAS the IC creates both neutrals and ions, mostly with energies below
+1keV.  Unfortunately the TOMAS IC matching system only enables coupling to the
+plasma up to 40kW, as such this will be our operating frequency together with a
+magnetic field of 0.114T (2000A input current) at 1500W, 3500W and 5500W
+injected power, with a pressure of $10^{-4}$ mbar during the discharge of the
+1500W, maintining the same base pressure (not the neutrals pressure) for the
+higher powers. I.e when the penning gauge indicates $10^{-3}$ mbar without IC
+and $10^{-4}$ mbar with IC at 1500W, we'll be doing 5500W for the same
+$10^{-3}$ mbar gas. Whilst the powers we'll use are very small compared to
+larger devices, due to the way everything is measured, as will be mentioned, it
+will be possible to extrapolate.  ICWC at TOMAS is a monopole working in a mode
+conversion scheme, as such most of the particles evenly spread to the wall.
+This enables us to extrapolate measurements performed by the ToF-NPA to the
+full vessel and use it as a prediction on how neutrals erode the sample, this
+already has been implemented in the NPA analysis code making it very
+straightforward to infer expected erosion rates. The question now is the
+erosion rates due to ions, unfortunately the retarding field energy analyser
+seems to have some hickups when doing IC discharges which we'll try to fix over
+the next couple of weeks.
+\subsection{ECWC}
+We don't expect any 10eV$<$ energy neutrals or ions, as such the main player if
+erosion occurs will be electrons. Even though I'm not sure how to estimate the
+correlation between the electron energy and flux to the erosion rate, the
+electron density and temperature will be measured using a langmuir probe.
+If I figure out how this has an influence, it can be added to the ICWC estimations.
+\subsection{ECWC+ICWC}
+These sometimes are used in conjunction, so we'll also do exposures with these,
+note that the erosion rate will drastically increase.
+\subsection{Glow Discharge}
+Even though GD is falling out of favour, we'll do some exposures if time permits, with the same 
+pre-measurements as IC
+\section{Exposure: Outgassing efficiency}
+This is for much later, after all the erosion estimations have been done, but
+under all the previously mentioned techniques, we'll use the same measurements
+and estimate the outgassing rate by constructing a sample with the same amount
+of doping in the BCA simulation.
+\end{document}
