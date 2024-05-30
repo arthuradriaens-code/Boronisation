@@ -8,9 +8,9 @@
 
 \section{Thickness and density estimation}
 We wish to know how the various wall conditioning schemes affect the PFM, to
-this end we need to know both the sample thickness before and after and it's
-density.  We want to know the density as to see how it is dependent on the
-substrate and to infer how many atoms got sputtered.
+this end we need to know both the sample thickness before and after the
+exposures, as well as it's density.  We want to know the density as to see how
+it is dependent on the substrate and to infer how many atoms got sputtered.
 \subsection{Boronized Tungsten}
 My proposal for measuring the thickness
 of the samples would be to use three methods, the first two methods concern a
@@ -29,7 +29,7 @@ ellipsometry) will only be possible if the tungsten surface is polished to withi
 a few nanometers.
  \vspace{0.2cm} \\
 To now measure the density we'll perform ion beam analysis on the half coated
-sample. To see how this works, follow the following train of thought: After
+sample. To see how this works, please allow the following train of thought: After
 analysing the experimental data from the IBA (ERDA) we'd know that there are x amount
 of $B^{10}$ atoms per cm$^2$ and y amount of $B^{11}$ atoms per cm$^2$ on the
 surface of the sample, using the mass of both of these isotopes and the
@@ -62,36 +62,57 @@ our plasma (if any are visible, our spectrometer is quite low-resolution). And t
 expose the pure boron to test the erosion rate with different powers.
 \subsection{ICWC}
 In TOMAS the IC creates both neutrals and ions, mostly with energies below
-1keV.  Unfortunately the TOMAS IC matching system only enables coupling to the
-plasma up to 40kW, as such this will be our operating frequency together with a
-magnetic field of 0.114T (2000A input current) at 1500W, 3500W and 5500W
+1keV.  Unfortunately the TOMAS IC antenna system only enables coupling to the
+plasma up to 40MHz, as such this will be our operating frequency together with
+a magnetic field of 0.114T (2000A input current) at 1500W, 3500W and 5500W
 injected power, with a pressure of $10^{-4}$ mbar during the discharge of the
 1500W, maintining the same base pressure (not the neutrals pressure) for the
 higher powers. I.e when the penning gauge indicates $10^{-3}$ mbar without IC
 and $10^{-4}$ mbar with IC at 1500W, we'll be doing 5500W for the same
 $10^{-3}$ mbar gas. Whilst the powers we'll use are very small compared to
 larger devices, due to the way everything is measured, as will be mentioned, it
-will be possible to extrapolate.  ICWC at TOMAS is a monopole working in a mode
-conversion scheme, as such most of the particles evenly spread to the wall.
-This enables us to extrapolate measurements performed by the ToF-NPA to the
-full vessel and use it as a prediction on how neutrals erode the sample, this
-already has been implemented in the NPA analysis code making it very
-straightforward to infer expected erosion rates. The question now is the
-erosion rates due to ions, unfortunately the retarding field energy analyser
-seems to have some hickups when doing IC discharges which we'll try to fix over
-the next couple of weeks.
+might be possible to extrapolate to bigger devices.  ICWC at TOMAS is a
+monopole working in a mode conversion scheme, as such most of the particles
+evenly spread to the wall.  This enables us to extrapolate measurements
+performed by the ToF-NPA to the full vessel and use it as a prediction on how
+neutrals erode the sample, this already has been implemented in the NPA
+analysis code making it very straightforward to infer expected erosion rates.
+The question now is the erosion rates due to ions, unfortunately the retarding
+field energy analyser (RFEA) seems to have some hickups for the moment when
+doing IC discharges which we'll try to fix over the next couple of weeks.  If
+it's not properly fixed when experiments are carried out, we will have to rely
+on simulations to determine the amount of ions and their energies in the
+plasma.
 \subsection{ECWC}
-We don't expect any 10eV$<$ energy neutrals or ions, as such the main player if
-erosion occurs will be electrons. Even though I'm not sure how to estimate the
-correlation between the electron energy and flux to the erosion rate, the
-electron density and temperature will be measured using a langmuir probe.
-If I figure out how this has an influence, it can be added to the ICWC estimations.
+Efficiency of ECWC for fuel removal has been less investigated in current
+devices but as it will be used for conditioning in JT-60SA and W7-X, there is
+an upsurge in interest. We don't expect any 10eV$<$ energy neutrals, as such
+the main player of outgassing and erosion will be ions.  As mentioned we either
+need some kind of RFEA measurements to estimate the erosion rate or somehow
+correlate the electron density and temperature to the ion density and
+temperature (as no neutrals will be observed).
 \subsection{ECWC+ICWC}
 These sometimes are used in conjunction, so we'll also do exposures with these,
-note that the erosion rate will drastically increase.
+note that the erosion rate will drastically increase. The max combined power
+should be around 11kW of injected power, we may scale as: 1.5kW EC + 1.5kW IC,
+3.5kW EC + 3.5kW IC, 5.5kW EC + 5.5kW IC, or total = 3kW, 7kW and 11kW of
+power.  I'd do the combined erosion after the IC and EC as we'll have a more
+concrete idea of what to expect.
 \subsection{Glow Discharge}
 Even though GD is falling out of favour, we'll do some exposures if time permits, with the same 
-pre-measurements as IC
+pre-measurements as IC.
+\section{Extrapolation to larger devices}
+If we can simulate the particle flux, using e.g a modified version of the tomator code, 
+we might be able to verify the erosion prediction this way and have confidence that this
+kind of code may work on bigger devices.
+
+It is also possible that some mechanisms are dominant and easily scalable, for
+example, it might be that the IC sputtering is mainly caused by the RF sheath
+formed in front of the antenna.  The RF sheath induced sputtering may scale
+logaritmically with power, if this is also the case with the sample erosion, we
+can be confident that it's the main sputtering candidate and thus easily
+scalable to other antenna's (by simulating their sheath).
+
 \section{Exposure: Outgassing efficiency}
 This is for much later, after all the erosion estimations have been done, but
 under all the previously mentioned techniques, we'll use the same measurements
