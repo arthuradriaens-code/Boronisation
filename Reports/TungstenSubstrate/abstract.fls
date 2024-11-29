@@ -123,7 +123,6 @@ INPUT ./figures/Mask.pdf
 INPUT ./figures/Mask.pdf
 INPUT ./figures/Mask.pdf
 INPUT ./figures/Mask.pdf
-INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT ./figures/NPA_example.pdf
 INPUT ./figures/NPA_example.pdf
 INPUT ./figures/NPA_example.pdf
@@ -135,6 +134,7 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/euler/eufm7.tfm
 INPUT ./abstract.bbl
 INPUT ./abstract.bbl
 INPUT abstract.bbl
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 INPUT /usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT abstract.aux
