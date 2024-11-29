@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1717085600.03854 "plan.tex" "plan.pdf" "plan" 1717085600.56978 0
+["pdflatex"] 1717418994.19993 "plan.tex" "plan.pdf" "plan" 1717418994.3891 0
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1713199481 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1713199481 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1713199481 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -35,8 +35,8 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1713199481 41588 b43d3e860a4f94167ee1e725ff526a72 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1713958771.11279 5312047 b07fcd2a9090df96fc745b92a3db793b ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1713958762 7112999 819e6eabc14b46d2b24dc55a84bede0e ""
-  "plan.aux" 1717085600.51622 1230 7fb1299d540222740454e069dda2c97b "pdflatex"
-  "plan.tex" 1717085596.57955 7542 4813c1c7286ffc968e1e65704fa84d23 ""
+  "plan.aux" 1717418994.36633 1230 7fb1299d540222740454e069dda2c97b "pdflatex"
+  "plan.tex" 1717418993.44633 8047 a3c35275e8e0a11de55e934f7543bff6 ""
   (generated)
   "plan.aux"
   "plan.log"

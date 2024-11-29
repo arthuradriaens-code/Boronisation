@@ -1,0 +1,91 @@
+\chapter{Introduction}
+There are two major areas of concern with hot plasma - material surface interactions,
+1. The first wall of the reactor will be damaged by the plasma and the reaction products -> study of erosion processes such as sputtering and blistering
+2. Surface interactions will contaminate the plasma with impurities -> cool by radiation 
+
+surprisingly plasma-surface interactions and it's effects frequently ignored in experiments - is this still true?
+In many cases: characteristics of the discharge more determined by plasma-surface interactions than classical plasma physics
+Difficult to accurately measure flux and energy distribution of plasma particles incident on the wall and of the resulting flux into the plasma.
+One may use ion and electron beams, obvious advantage: simpler experiment with easily chosen parameters but disadvantage that co-operative effects, which may occur only when the complete
+plasma is present, will not be observed - Advantage for TOMAS
+
+The main purpose of the limiter is to protect the
+torus wall from damage due to violently unstable
+discharges and from intense beams of runaway
+electrons.
+The traditional material is therefore usually a refractory metal such as tungsten or molybdenum. - Refractory metals are a class of metals that are extraordinarily resistant to heat and wear.
+
+There are at least three distinct modes in which tokamaks can operate:
+a) low-Z dominated:  impurities are predominantly oxygen, carbon or nitrogen and most of the Ohmic power is lost by radiation from these species. Radiation mainly from low ionization states at larger minor radii (center fully stripped)
+b) high-Z dominated: The impurities are primarily high-Z metals like molybdenum or tungsten from the limiter  A prerequisite of this type of operation is the removal of most of the adsorbed gas from the walls, normally by rigorous discharge cleaning.
+    Center not fully stripped -> radiation and center low temperature -> hollow profile
+c) high-density mode: low impurity concentration, two prerequisites: 
+    1) low-Z concentration on the wall reduced to a very low level through various wall conditioning or gettering
+    2) additional working gas, H or D is injected during the discharge - then not understood, maybe now? Then observed less edge temps -> reduce sputtering and arcing probability
+
+\chapter{Recycling}
+
+In most machines plasma density immediately after initial ionization phase corresponds to only about one half of that which would by expected if all the filling gas were completely ionized and contained.
+The rapid build-up of impurities provides evidence of a strong interaction with the wall during the initial rise when containment is poor.
+In some machines the density falls with time, indicating pumping by the wall, whilst in others the density is observed to increase in an uncontrollable manner.
+Martin and Lewin showed that large concentrations of gas exist in the walls. Outgassing $t^{-x}$ x between 0.5 and 1.
+
+The typical amount of gas in the wall is large compared with that in the plasma, as such the density behaviour during a discharge cepndends very sensitevely upon the fluw of particles and radiation to the wall
+which determines the rate of desorption.
+The gas release from the walls has been directly observed [49]
+
+It is never possible to get completely rid of the hydrogen in the system implying large reservoir in the walls.
+
+\textit{Recycling} refers specifically tot hose processes whereby plasma ions return to the discharge after intercating with the wall.
+
+Exposing the torus wall to a pressure of $5 \times 10^{-3}$ torr for 2 seconds before a discharge could increase the plasma density by a factor of three and this effect is linear with pressure. - this should be tested on TOMAS
+
+ion implantation results in damage sites in the lattice at which the diffusing atoms become trapped and the effective diffusion coefficient in unannealed samples can be as much as two orders of magnitude lower than for diffusion in annealed samples.
+
+It has normally been assumed that the release mechanism of atoms from the trapping sites is essentially a thermal one and threfore controlled primarily by a rate equation of the usual form
+\begin{equation}
+    R = R_0 \exp{-Q/RT}
+\end{equation}
+This has been shown for low-energy hydrogen ions implanted in stainless steel [75,76]
+
+This process, whezreby an incident ion desorbs an atom previously trapped in the solid lattice, has been studied in detail for the rare gases [72,79].
+the details of the mechanism are not properly understood but it can be quite well described by a 
+cross-section. In experiments deuterium is implanted in a surface and subsequently detrapped by hydrogen ions of the same energy.
+
+In any practical situation there is likely to be a combination of ion-induced and thermal effects, thermal dominating at high T and the detrapping process at low T
+At room temperature, ion-induced detrapping appears to play the major role during the short timescale of a tokamak.
+
+A global model for recycling:
+\begin{equation}
+    \frac{dN_W}{dt} = \frac{N_p}{\tau} - \beta \ frac{N_p}{\tau} - \alpha N_W \frac{N_p}{\tau}
+\end{equation}
+With $N_p$ the total number of ions and atoms in the plasma phase, $N_W$ the
+ones trapped in the wall, $\tau$ the average containment time for ions and
+atoms, $\beta$ the average reflection coefficient, $\alpha $ the detrapping
+cross-section $\sigma$ divided by A, the area of the wall taking part in the
+interaction, to first order $\alpha$ is independent of the gas concentration in
+the surface.
+
+Neutral atoms entering the discharge undergo three principal atomic reactions:
+\begin{eqnarray}
+    H + H⁺ &\rightarrow H⁺ + H \text{charge exchange}\\
+    H + H⁺ &\rightarrow 2H⁺ + e\text{ ion-impact ionization}\\
+    H + e &\rightarrow H⁺ + 2e\text{ electron-impact ionization}\\
+\end{eqnarray}
+molecular hydrogen is more complex:
+\begin{eqnarray}
+    H_2 + e &\rightarrow 2H + e \text{dissociation}\\
+    H_2 + e &\rightarrow H⁺ + H + e\text{ dissociative ionization}\\
+    H_2 + e &\rightarrow H_2⁺ + 2e\text{ ionization}\\
+    H_2 + H_2^+ &\rightarrow H_2^+ + H_2\text{ charge exchange}\\
+\end{eqnarray}
+The ionized molecule can undergo a further series of reactions:
+\begin{eqnarray}
+    H_2^+ + e &\rightarrow 2H \text{dissociative recombination}\\
+    H_2^+ + e &\rightarrow H⁺ + H + e\text{ dissociative excitation}\\
+    H_2^+ + e &\rightarrow 2H⁺ + 2e\text{ dissociative ionization}\\
+    H_2^+ + H_2 &\rightarrow H_3^+ + H\text{ formation of $H_3^+$ ion}\\
+    H_2^+ + H_2 &\rightarrow H_2^+ + H_2\text{ charge exchange}\\
+\end{eqnarray}
+
+The dissociation of the neutral molecule leads to the production  of atoms with energies of up to 12eV, owing to initial electronic excitation of the molecule into a repulsive state [89].

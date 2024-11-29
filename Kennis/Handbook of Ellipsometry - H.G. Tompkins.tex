@@ -1,0 +1,43 @@
+In the late 1800s, Drude used the phase shift induced between mutually
+perpendicular components of polarized light to measure film thickness down to
+tens and ones of angstroms (1 angstrom = 0.1nm).  When the mutually
+perpendicular components of polarized light are out of phase, the light is said
+to be "elliptically polarized" hence it became known as \textit{ellipsometry}
+
+Elliptically polarized light has an electric field of the form
+\begin{equation}
+    \vec{E}(t) = \begin{bmatrix}
+        E_x(t)\\
+        E_y(t)
+        \end{bmatrix}
+        = \Re\left\{
+        \begin{bmatrix}
+        Xe^{i\Delta}\\
+        Y
+        \end{bmatrix}
+        e^{i\omega(t-t_0)
+            \right\}
+\end{equation}
+Besides the phase shift $\Delta$, the state of elliptic polarization is determined by the amplitudes X and Y. More precisely, only the \textit{relative amplitude} X/Y is relevant in ellipsometric measurements as multiplying both X and Y by a common constant merely changes the light intensity.
+The relative angle can be expressed with the help of the angle $\Psi$:
+\begin{equation}
+    \tan \Psi  = \frac{X}{Y}
+\end{equation}
+Consequently, the elliptic polarization can be represented by the \textit{Jones vector}
+\begin{equation}
+    \begin{bmatrix}
+        \sin \Psi e^{i\Delta}\\
+        \cos \Psi e^{i\Delta}
+    \end{bmatrix}
+\end{equation}
+Two states are called \textit{orthogonal} when their Jones vectors are
+orthogonal in the usual sense of vector algebra.
+Special cases:
+\begin{itemize}
+    \item Linear polarization: $\Delta = 0$ or $\pi$
+    \item Circular polarization: $\Psi = \pi/4$ and $\Delta = \pi/2$ or $-\pi/2$
+\end{itemize}
+In the quantum-mechanical picture, the general state of elliptic polarization is a superposition
+of linear polarization along x with the complex amplitude $\sin\Psi \exp i\Delta$ and the state of linear polarization along y with the complex amplitude $\cos \Psi$. Consequently the probability of
+a photon passing an ideal polarizer oriented along x is $\sin^2\Psi$ and along y is $\cos^2\Psi$.
+
