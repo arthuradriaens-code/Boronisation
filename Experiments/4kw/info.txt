@@ -1,0 +1,1 @@
+samples 2 (left when seeing text normal way) and 5 (right) were exposed to 120s of 4kw IC.

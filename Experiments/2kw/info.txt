@@ -1,0 +1,3 @@
+Samples 3 & 6 were exposed to 100s of 2kW IC, 3 fell on it's face during dismount so 6 probably has the better result. The DAQ measurements 1-50 are a probe scan with the same conditions and the singular separate is a vertical probe measurement.
+
+The sample holder was positioned at 395 which seems to be roughly equal to the wall.
