@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex plan"] 1734963943.84151 "plan.aux" "plan.bbl" "plan" 1734963944.15101 0
-  "./sources.bib" 1734962428.60084 3763 c2fe25b5465298d4c006ca56d5e2cd66 ""
+["bibtex plan"] 1735053323.1579 "plan.aux" "plan.bbl" "plan" 1735053324.30165 0
+  "./sources.bib" 1735051685.72645 7797 c96aae821238e232515c17d1b4621d2f ""
   "/usr/share/texmf-dist/bibtex/bst/base/plain.bst" 1727349926 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "plan.aux" 1734963944.05333 1908 8b13956dc8cf1c9d716b9663d346b83f "pdflatex"
+  "plan.aux" 1735053323.93425 1996 4926c98e22b79f535519e4deac9b57e2 "pdflatex"
   (generated)
   "plan.bbl"
   "plan.blg"
   (rewritten before read)
-["pdflatex"] 1734963943.87831 "plan.tex" "plan.pdf" "plan" 1734963944.15116 0
+["pdflatex"] 1735053323.29417 "plan.tex" "plan.pdf" "plan" 1735053324.30205 0
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1727349926 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1727349926 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1727349926 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -43,11 +43,11 @@
   "/usr/share/texmf-dist/tex/latex/base/size10.clo" 1727349926 8448 dbc0dbf4156c0bb9ba01a1c685d3bad0 ""
   "/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def" 1727349926 30006 3d512c0edd558928ddea1690180ef77e ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1727349926 41588 b43d3e860a4f94167ee1e725ff526a72 ""
-  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1731932472.3686 5312047 b07fcd2a9090df96fc745b92a3db793b ""
-  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1731932459 7113011 71facf2564ee62374dd1937a7f7672cb ""
-  "plan.aux" 1734963944.05333 1908 8b13956dc8cf1c9d716b9663d346b83f "pdflatex"
-  "plan.bbl" 1734963943.87334 920 ae3407139a826567702f34c63eb973a3 "bibtex plan"
-  "plan.tex" 1734963941.85667 11448 e9ce7c9451602be4bed9fff9094bc701 ""
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1727685252.78473 5312047 b07fcd2a9090df96fc745b92a3db793b ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1727685003 7112993 d773fc62db3abd11a0b40795d5eb3ba1 ""
+  "plan.aux" 1735053323.93425 1996 4926c98e22b79f535519e4deac9b57e2 "pdflatex"
+  "plan.bbl" 1735053323.28425 1557 e414dc692b5ef14cdc3b157cff22d586 "bibtex plan"
+  "plan.tex" 1735053322.72759 11795 16fe84984758d5dee73a3ccfaf2edc39 ""
   (generated)
   "plan.aux"
   "plan.log"

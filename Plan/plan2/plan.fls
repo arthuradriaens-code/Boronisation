@@ -1,4 +1,4 @@
-PWD /home/arthur/Universiteit/PhD/Boronisation/Plan/plan2
+PWD /home/arthur/Documents/PhD/Boronisation/Plan/plan2
 INPUT /usr/share/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
 INPUT plan.tex
