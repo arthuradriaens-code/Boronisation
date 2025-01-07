@@ -14,176 +14,107 @@
          \hline
          Amount & kind of samples & need & project & TOMAS days \\ [0.5ex]
          \hline\hline
-         12 & hydrogen doped graphite & Test ICWC vs ECWC & W7-X & 12 \\
-         6 & hydrogen doped boron-coated graphite & & & \\
-         2 & boron-coated graphite & & & \\
+         12 & hydrogen doped graphite & Test ICWC vs ECWC & W7-X & 18 \\
+         12 & hydrogen doped boron-coated graphite & & & \\
          \hline
-         12 & Boronized tungsten, doped with deuterium & test efficiency of IC vs EC vs GD & ITER & 12\\
-         4 & Pure tungsten, doped with deuterium & & &\\
+         56 & Boronized tungsten, doped with deuterium & Test efficiency of IC and GD & ITER & $\approx$35\\
          \hline
     \end{tabular}
 \end{center}
+Note that these samples don't include the five ITER-contract mentioned 
+"test depositions and characterization of the layers,...to make sure D content can be produced reliably."
 \section{Scientific relevance and reasoning}
 \subsection*{W7-X}
-Glow discharge in H$_2$ plasma and ECWC in He plasma have been actively used on W7-X 
-to condition the wall and it's effects have been reported (\cite{Goriaev_2020},\cite{WAUTERS2018235} and EUROFUSION WPS1-PR(16) 16175).
-However, ECWC is only able to deposit power near the fundamental, as such the EC wall conditioning is
-inhomogeneous. ICWC shouldn't have this kind of shortcoming and should provide a more efficient cleanup\cite{WEGAIC}. as a preparation to the eventual 
-usage of ICWC in W7-X it should be investigated how ECWC and ICWC compare both in outgassing from
-pure graphite and from boron-coated graphite (as both are possible PFMs in W7-X).
-To this end baseline ECRH experiments need to be carried out on TOMAS, as well as ICWC experiments
-to compare to as to draw conclusion to W7-X.
+Glow discharge in H$_2$ plasma and ECWC in He plasma have been actively used on
+W7-X to condition the wall and it's effects have been reported
+(\cite{Goriaev_2020},\cite{WAUTERS2018235} and EUROFUSION WPS1-PR(16) 16175)
+while it is possible for stellarators to have homogeneous EC wall conditioning,
+ICWC may provide a more efficient cleanup \cite{WEGAIC}. As preparations for
+the possible usage of ICWC in W7-X it should be investigated how ECWC and ICWC
+compare both in removal from pure graphite and from boron-coated graphite (as
+both are possible PFMs in W7-X).  To this end baseline ECWC experiments need to
+be carried out on TOMAS, as well as comparative ICWC experiments, both in W7-X relevant plasmas.
+
+As mentioned in EUROFUSION WPS1-PR(16) 16175, ECWC outgassing follows a time
+power law ($\propto t^{-0.7}$), a similar law for removal needs to be observed
+on TOMAS to show that it is equipped to compare IC and EC, after which similar
+experiment needs to be carried out to determine the IC time power law and scale
+difference between EC and IC on TOMAS.
+
+To obtain W7-X relevant conditions in TOMAS, the IC frequency will be set to
+38MHz, mimicking the W7-X minority heating and the second harmonic heating
+scenarios (which we of course don't have due to the low magnetic field).  Both
+the electron density, temperature and ideally ion energy distribution 
+will be kept as close as possible to the one observed at W7-X 
+(reflectometer + langmuir probe measurements + modelling on W7-X, LP
+, interferometer and RFEA on TOMAS), the plasma species will be Helium. 
+
+During experiments the QMS, the MW interferometer and optical spectroscopy will
+be acquiring data.
 \subsection*{ITER}
-It has quite recently been decided that ITER will not have a Berillium wall but a tungsten wall, 
-experiments have been carried out at JET with an "ITER-like wall"\cite{DOUAI2013S1172} which
-was, at the time, a Berillium wall. The author is unaware of any published wall conditioning experiments carried out 
-on tungsten walls, as such the proposal is to compare all 3 ITER available wall conditioning schemes using both
-boronized tungsten, as regular boronization will be done. As well as pure tungsten experiments
-to gain information on de-trapping of exposed tungsten.
+Following the ITER contract [ADCYGE] the 2 ITER available wall
+conditioning schemes GDC and ICWC will be tested on deuterium-doped 
+boronized tungsten. To this end ITER relevant plasmas need to be created
+in the TOMAS machine on the sample holder position, after which the necessary 
+exposures are carried out.
+To this end NPA measurements need to be carried out to find a fluence relevant to a 
+20-minute ICWC procedure at 10-20\% duty cycle (as layed out in the contract).
+During experiments the QMS, the MW interferometer and optical spectroscopy will
+be acquiring data.
 \section{TOMAS setup and days estimate}
 \subsection{W7-X}
-As mentioned in EUROFUSION WPS1-PR(16) 16175, ECWC outgassing follows a time law, this law 
-needs to be measured on TOMAS to show that it is equiped to compare IC and EC, after which
-the same kind of experiment needs to be carried out to determine the IC time law and scale difference.
-To get a W7-X relevant condition, the IC frequency will be set to 38MHz, mimicking the minority heating
-and the second harmonic heating scenarios. The power level will be kept as high as possible whilst the electron density
-will be kept to the one observed at W7-X (reflectometer measurements), the plasma species will be Helium to have
-a more distinct signal from the removed hydrogen.
-
-The exposures will all keep these same settings and vary in time to make a time-outgassing relation possible.
-6 samples will be used to do the EC discharges, grouped as 2 each to make error estimation possible. After which
-6 samples will be used to do the IC discharges. 
-
-As W7-X also boronizes their walls (monthly), IC experiments
-will also be carried out on 6 boronized graphite samples. as
-the EC-IC relation should already be established from previous
-experiments, this should give additional insight into the
-de-trapping efficiency of boron.
-As the rapidity of boron erosion under plasma operation is
-still an open question, this will also be measured using the
-remaining 2 samples.
+The exposures will all keep the previously mentioned plasma characteristicx to make a
+time-removal relation possible.  As W7-X boronizes their walls (monthly), EC
+and IC experiments will be carried out on 24 hydrogen-doped boronized graphite
+samples, grouped 4 per shot 3 per WC scheme (2: EC and IC).  
+This should give insight into the de-trapping efficiency of boron in W7-X.
+As the rapidity of boron erosion under plasma operation is still an open
+question, this will also be measured post-mortem.
 \subsection{ITER}
-6 Boronized tunsten samples will be used for ICWC estimates,
-4 for ECWC estimates 
-\section{Thickness and density estimation}
-We wish to know how the various wall conditioning schemes affect the boronized PFM, to
-this end we need to know both the thickness of the boron layer before and after the
-exposures, as well as it's density.  We want to know the density as to see how
-it is dependent on the substrate and to infer how many atoms got sputtered.
-\subsection{Boronized Tungsten}
-My proposal for measuring the thickness
-of the boron layer is to use three methods, the first two methods concern a
-general estimate of the thickness whilst the third would be sample-specific.
-We first half-coat one sample by applying sticky tape during coating and
-peeling it off afterwards, enabling the first method: the use of a profilometer
-to determine the jump in height. The second method which we'll also apply on
-this half-coated sample is the use of a SEM either by drilling small holes in
-the coated surface and determine the thickness that way or looking at the side
-of the sample.  The third method is to use the ellipsometer in the mirror lab,
-this last method is also what we'll be using for the normal samples, it is
-however good to have many thickness estimates of the half-coated sample as
-we'll need it later and as it's a good check to see if the ellipsometry
-measurements are accurate.  Note that most of these techniques (especially the
-ellipsometry) will only be possible if the tungsten surface is polished properly.
- \vspace{0.2cm} \\
-To now measure the density we'll perform ion beam analysis on the half coated
-sample. To see how this works, please allow the following train of thought: After
-analysing the experimental data from the IBA (ERDA) we'd know that there are x amount
-of $B^{10}$ atoms per cm$^2$ and y amount of $B^{11}$ atoms per cm$^2$ on the
-surface of the sample, using the mass of both of these isotopes and the
-measured thickness (of which we have 3 independent measurements), we can infer
-the density:
-\begin{equation}
-    \rho = \frac{1}{d \times 1 cm^2} \left( x \times \text{massa }B^{10}   \text{ isotope} + y \times \text{massa }B^{11}   \text{ isotope}\right)
-\end{equation}
-Assuming this density to hold for the other samples, we can infer how many atoms 
-were sputtered from the change in thickness which we'll measure using ellipsometry.
-\subsection{Boronized Graphite}
-My proposal for measuring the thickness of the boron layer on graphite would be
-to use two methods, we'll also be using the half-coated sample enabling the use
-of a profilometer. The second method which we'll apply in conjunction is by
-using the ellipsometer in the mirror lab, note that the SEM wouldn't be able to
-see the difference between carbon and boron and is thus not possible to use
-here. We then proceed as mentioned for tungsten, inferring the density using
-IBA.
-\section{Doping estimation}
-As we'd later want to measure the outgassing efficiency of the various wall conditioning 
-systems, we'd like to dope the samples with some atoms (e.g deuterium) and measure the concentration
-before and after the various wall conditioning schemes.
-We'll probably measure these concentrations using ERDA.
-\section{Exposure: Erosion rate}
-We'd like to expose the samples to either hydrogen, helium or mixed hydrogen
-and helium. Each under different wall conditioning regimes, either Glow Discharge,
-Ion Cyclotron Wall Conditioning, Electron Cyclotron Wall Conditioning or ICWC and ECWC
-at the same time. We'll first do some spectroscopy to see the amount of impurities in
-our plasma (if any are visible, our spectrometer is quite low-resolution). And then
-expose the pure boron to test the erosion rate with different powers.
-\subsection{ICWC}
-In TOMAS the IC creates both neutrals and ions, mostly with energies below
-1keV.  The frequency at which we may couple is still uncertain, ideally we'd like to
-go as high as possible which would be a 50MHz plasma, but for now we were only able to go up to 42MHz. 
-As magnetic field we will use 0.114T (2000A input current) and power-wise we'd
-like to do a ramp, with values 1500W, 3500W and 5500W of injected power. 
-Limiting the pressure to $10^{-4}$ mbar during the discharge of the
-1500W, maintining the same base pressure (not the neutrals pressure) for the
-higher powers. I.e when the penning gauge indicates $10^{-3}$ mbar without IC
-and $10^{-4}$ mbar with IC at 1500W, we'll be doing 5500W for the same
-$10^{-3}$ mbar gas (however this system is still under consideration). 
-Whilst the powers we'll use are very small compared to
-larger devices, due to the way everything is measured, as will be mentioned, it
-might be possible to extrapolate to bigger devices.  ICWC at TOMAS is a
-monopole working in a mode conversion scheme, as such most of the particles
-evenly spread to the wall.  This enables us to extrapolate measurements
-performed by the RFEA (retarding field energy analyser,able to  measure the ion distribution) 
-and ToF-NPA (Time of Flight Neutral Particle energy Analyser, measure neutral distribution) 
-to the full vessel and use it as a prediction on how the sample will be eroded. 
-Unfortunately the retarding field energy analyser (RFEA) seems to have some
-hickups for the moment when doing IC discharges which we'll try to fix over the
-next couple of weeks.  If it's not properly fixed when experiments are carried
-out, we will have to either rely on simulations to determine the amount of ions and
-their energies in the plasma or correlate the electron density and temperature to the
-ion density and temperature (if at all possible) or correlate the neutrals to the ions
-(e.g assuming pure charge exchange).
-\subsection{ECWC}
-Efficiency of ECWC for fuel removal has been less investigated in current
-devices but as it will be used for conditioning in JT-60SA and W7-X, there is
-an upsurge in interest. We don't expect any 10eV$<$ energy neutrals, as such
-the main player of outgassing and erosion will be ions.  As mentioned we either
-need some kind of RFEA measurements to estimate the erosion rate/simulate or somehow
-correlate the electron density and temperature to the ion density and
-temperature.
-\subsection{ECWC+ICWC}
-These sometimes are used in conjunction, so we'll also do exposures with these,
-note that the erosion rate will drastically increase. The max combined power
-should be around 11kW of injected power, we may scale as: 1.5kW EC + 1.5kW IC,
-3.5kW EC + 3.5kW IC, 5.5kW EC + 5.5kW IC, or total = 3kW, 7kW and 11kW of
-power. We have tested 10kW already so this all seems possible.  I'd do the
-combined erosion after the IC and EC as we'll have a more concrete idea of what
-to expect.
-\subsection{Glow Discharge}
-Even though GD is falling out of favour due to superconducting magnets not
-being easy to turn off, we'll do some exposures if time permits, with the same
-pre-measurements as IC.
-\section{Extrapolation to larger devices}
-If we can simulate the particle flux, using e.g a modified version of the
-tomator code, and the thus implied erosion using a BCA (Binary Collision
-Approximation) code such as rustBCA, we might be able to verify the erosion
-prediction and have confidence that this kind of code may work on
-bigger devices.
+ICWC: 8*4 = 32 samples (8 per exposure, 4 exposures out of which 2 are test exposures and 2 are final, 
+performed at 70$^\circ$C and 240$^\circ$C).
 
-It is also possible that some mechanisms are dominant and easily scalable, for
-example, it might be that the IC sputtering is mainly caused by the RF sheath
-formed in front of the antenna.  The RF sheath induced sputtering may scale
-logaritmically with power, if this is also the case with the sample erosion, we
-can be confident that it's the main sputtering candidate and thus easily
-scalable to other antenna's (by simulating their sheath).
+GDC: 8*3 = 24 samples (8 per exposure, 3 exposures out of which 1 is a test and 2 are final,
+one at 70$^\circ$C and one at 240$^\circ$C).
 
-\section{Exposure: Outgassing efficiency}
-This is for much later, after all the erosion estimations have been done, but
-under all the previously mentioned techniques, we'll use the same measurements
-and estimate the outgassing rate by constructing a sample with the same amount
-of doping in the BCA simulation.
-
+TOMAS time estimate: the ITER plan gives a maximum of 2 months, this is reasonable,
+a full exposure of 8 samples may take up to 5 days (3 day of preparation such as finding the 
+ideal setting and cleaning the wall, 1 day of pumping down and 1 day of exposure)
+as there are 7 such exposures we estimate 35 days of experiments.
+\section{Sample analysis}
+Most of this will probably be outsourced to experts within FZJ whom will
+be credited appropriately. The primary goal on all exposed samples
+is to measure the fuel removal, nevertheless it is possible to extract additional
+information like roughness before and after exposure and erosion of the boron layer.
+As such the plan is: 
+\begin{enumerate}
+    \item sample preparation
+    \item roughness measurement
+    \item (if adequate)ellipsometry
+    \item TOMAS exsposure
+    \item roughness measurement
+    \item De-trapping measurements
+    \item (if adequate) ellipsometry 
+    \item FIBSEM
+\end{enumerate}
+Here will follow a short overview of the analysis methods.
+\subsection{fuel removal estimates}
+The elemental concentrations need to be inferred for the samples, this will be accomplished
+using Thermal Desorption Spectroscopy (TDS) and Nuclear Reaction Analysis, whereby we 
+assume homogeneous impurity doping during initial boron coating
+and homogeneous removal or negligible erosion of the coating, as such 
+we may draw direct conclusions regarding the wall conditioning effectiveness.
+\subsection{Roughness measurements}
+The exposure to the plasma may give inhomogeneous sputtering which might be
+of interest, as such a simple 1D profilometry measurement may be made before
+and after exposure, or, if needed, a full 2D surface map. Both of the needed
+devices are located in the mirror lab overseen by dr. Litnovsky.
+\subsection{Thickness estimate}
+Thickness estimates may be made using ellipsometry on the doped specimens 
+prior to the exposure and after exposure prior to being analysed using TDS, as it is non-destructive 
+, if the method is deemed adequate.
+Post-mortem (i.e after exposures and TDS) the sample thickness may (also) 
+be found using FIBSEM (dr. Rasinski).
 \bibliographystyle{plain}
 \bibliography{sources}
 \end{document}
