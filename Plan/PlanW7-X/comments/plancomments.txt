@@ -1,0 +1,48 @@
+One needs to distinguish 
+-ECWC in tokamak from ECWC in stellarator: low ionistion degree and non uniform, vs fully ionised and essentially a diverted plasma
+- ICWC in tokamak and ICWC in stellarator.
+paper [3] attempts to clarify this...
+
+Below I paste a message that I wrote to Jef recently. It may give an idea on how to optimise ICWC in a stellarator.
+
+"Hoi Jef,
+
+ECWC in W7-X is het equivalent van een cleaning puls met X point in een tokamak. De intereactie is het sterkst rond de strike line. De strike line kan verplaatst worden met de error field coils. Een beetje zoals strike points sweeps in een tokamak. Van toen ik bij W7-X was herinner ik niet dat EC golven koppelen in de rand van het plasma. We werkten steeds met volledig geioniseerde plasmas waarbij het vermogen geabsorbeerd wordt in de eerste passage van de EC bundel door de resonantielaag.
+
+Delen van de wand die het meeste flux krijgen warmen ook het meeste op. Hogere temperaturen maakt outgassing efficient, tijdens en net na een puls. Het materiaal oppervlak op deze locaties bevat dus minder H dan in de koudere zones. Helium plasmas werken nog extra op deze zones. Het waterstof dat je ziet in een plasma, en maar traag afvalt, is dus vooral afkomsting van andere wand oppervlakken, weg van de strike line.
+
+ICWC in W7-X heeft hetzelfde magnetische veld. Er zal steeds een sterke ion flux zijn rond de strike lines, net zoals in een ECWC plasma. Het is mogelijk ICWC te optimaliseren voor het produceren van charge exchange neutrals (CXN). Die interageren met de hele wand oppervlakte. CXN is meestal waterstof. Waterstof met waterstof verwijderen is niet evident. H met D verwijderen, isotopic exchange, is wel mogelijk.
+
+Maar het probleem is H in He plasma, en niet in D plasma, correct?
+
+In TOMAS ToF NPA zien we veel minder CXN flux in een helium plasma dan in een H2 plasma. De reactie snelheid van CX tussen He+ en He is nochtans hoger dan tussen H+ en H2, zie bijgevoegde figuur uit mijn PhD. In TOMAS produceren we waarschijnlijk minder energetische He+ dan H+. Ofwel zijn H atomen die we detecteren afkomstig van de electron impact dissociatie van energetisch H2+, in plaats van van CX, een process dat afwezig is in Helium. 
+
+De confinement time van ICWC plasma in een tokamak is zeer klein (geen plasma stroom) en de dichtheid van het plasma is laag, dus er is weinig mogelijk voor thermalisatie tussen electronen en verschillende ionen. 
+
+Dit is anders in een stellarator, door de betere confinement (flux surfaces) moet het mogelijk zijn om een plasma te optimaliseren voor het produceren van He CXN. 
+
+Om energetische He atomen te creeren via CXN is het nodig om een plasma te maken met ionen temperatuur rond de 100-200 eV, dat niet volledig geioniseerd is zodat neutraal He een weg kan vinden van de wand -waar het recycleerd- tot het plasma centrum waar de de energetische He ionen zich bevinden.
+
+Dit lijkt me een mooi experiment dat je zou kunnen onderbouwen met Tomator simulaties, mits enkele aanpassingen aan de transport parameters.
+
+Vriendelijke groet,
+Tom"
+
+
+Outgassing is measured by pressure gauge and mass spectrometry. It is a time dependent effect, and not a local measurement but a sum off contribution of all surfaces.
+Later in the text, I think, removal and outgassing is used as a synonym, which it is not. Removal is a time integrated quantity. It can be given locally for a sample for instance.
+
+The decay is a power law. 
+The exponent depends also on the wall material, the H or D isotope. Be careful when comparing carbon W7-X, with stainless steel TOMAS...
+Regarding outgassing, better look at total removal for different techniques within a same device. And look at well characterized local interaction on samples.
+
+The magnetic field in TOMAS is low, we at 38MHz one does not get the second harmonic heating effect.
+I think this is not an issue for the experiment, 38MHz is good choice.
+
+Since the wall material and the magnetic field configuration is different between TOMAS and W7X It is essential to characterize the particle fluxes at the location of the samples, and adjust them so that they can be seen as relevant to the ICWC and ECWC in W7-X. Does one have information on the particle flux in W7X ? E.g. from langmuir probes?
+
+Good to optimize this against W7-X data if available (perhaps there is modeling? check with EMC3-Eirene people)
+
+What will be measured on these samples. erosion, isotopic exchange, O removal?
+
+
