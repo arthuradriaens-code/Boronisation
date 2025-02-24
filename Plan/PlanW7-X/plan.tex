@@ -1,6 +1,6 @@
 \documentclass{article}
 \usepackage{amsmath}
-\title{W7-X boronisation research plan}
+\title{W7-X relevant TOMAS wall conditioning experiments}
 \author{Arthur Adriaens}
 
 \begin{document}
@@ -14,38 +14,48 @@
          \hline
          Amount & kind of samples & need & project & TOMAS days \\ [0.5ex]
          \hline\hline
-         28 & boronized graphite & He GD & W7-X & 6 \\
-         20 & hydrogen doped boronized graphite & He ECWC & W7-X & 4 \\
+         28 & boronized graphite & H \& He and H+He GD & W7-X & 6 \\
+         20 & hydrogen doped boronized graphite & He ICWC & W7-X & 4 \\
          \hline
     \end{tabular}
 \end{center}
 \section{Scientific relevance and reasoning}
-Glow discharge (GD) in H$_2$ plasma and Electron Cyclotron Wall Conditioning
-(ECWC) in He plasma have been actively used on W7-X to condition the wall and
-it's effects have been reported (\cite{Goriaev_2020},\cite{WAUTERS2018235} and
-EUROFUSION WPS1-PR(16) 16175).
+W7-X employs weekly Glow Discharge (GD) in H$_2$ and daily in helium for
+impurity and hydrogen removal respectively \cite{AndreiNucMatEn}. and Electron
+Cyclotron Wall Conditioning (ECWC) in H and He plasma (in the form of pulse trains)
+is applied for density control in hydrogen plasmas during experimental days, 
+its effects have been reported (\cite{Goriaev_2020},\cite{WAUTERS2018235} and
+EUROFUSION WPS1-PR(16) 16175). Eventually, W7-X will leverage the ICRF
+antenna to perform ICWC.
 
 \subsection*{boronized graphite}
-Glow discharge erodes the boronized wall, it would be interesting to be 
-able to predict to what extend, to this end we will measure ion energy distributions
-for different GD settings using the Retarding Field Energy Analyzer (RFEA) and expose 
-samples for chosen energies. The aim is to then predict with an erosion code like ERO or 
-rustBCA the observed erosion. If this is possible, it would showcase the effectiveness
-of the erosion codes, enabling it's deployment on W7-X measured fluxes.
+The interaction of the hot plasmas will erode the first (boronized) wall, it
+would be interesting to be able to predict to what extend, to this end we will
+measure ion energy distributions for W7-X relevant GD settings using the
+Retarding Field Energy Analyzer (RFEA) and expose samples for chosen
+environments. The aim is to then predict with an erosion code like ERO or
+rustBCA the observed erosion. If this is possible, it would showcase the
+effectiveness of the erosion codes, enabling it's deployment on W7-X
+measured/calculated wall fluxes.
 
 \subsection*{hydrogen doped boronized graphite}
-W7-X has homogeneous EC wall conditioning in the form of pulse trains.
-%ICWC may provide a more efficient cleanup \cite{WEGAIC}. As preparations for
+W7-X has diverted EC plasma, as such only the divertor area
+is conditioned by ECWC which erodes the boron layer within seconds.
+As such it is not relevant to study ECWC on TOMAS, and we will focus on
+ICWC.
+% which may provide a more efficient cleanup \cite{WEGAIC}. As preparations for
 %the possible usage of ICWC in W7-X 
-It should be investigated how ECWC performs%and ICWC
-in removal from boron-coated graphite, as mentioned in EUROFUSION WPS1-PR(16) 16175, 
-ECWC outgassing should follow a time power law ($\propto t^{-0.7}$), 
-we wish to observe a similar time law for removal 
-to show that TOMAS is equipped for such experiments.
-If this is observed, further samples may be prepared to investigate Ion Cycltron Wall
-Conditioning.
+We wish to observe a time law for de-trapping to interpolate to W7-X.
 \section{TOMAS setup and days estimate}
 \subsection*{GD}
+The GD settings used at TOMAS will mimick the ones used in W7-X, namely 1.5A
+$\approx300$V at $\approx4.5\times10^{-3}$mbar  for H$_2$ and 1.0A $\approx
+200$V at $\approx 3.5\times10^{-3}$mbar for He\cite{AndreiNucMatEn}.  As the
+current and voltage relate via ohms law it might not be possible to exactly
+reproduce both the current and voltage. As classically sputtering is linear
+with flux (or current) and a power law with energy, matching the voltage is 
+of higher importance.
+
 GD experiments will be carried out on 28 boronized graphite samples, grouped 4
 per shot for 7 shots. 4 samples per exposures to have reasonable statistics and
 4 exposures for different energies each to have reasonable confidence in the
