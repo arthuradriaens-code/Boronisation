@@ -1,6 +1,6 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.2.24)  24 FEB 2025 17:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.1.10)  2 MAR 2025 20:17
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
 **plan.tex
@@ -110,35 +110,30 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
 LaTeX Font Info:    ... okay on input line 6.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (4.3745pt too wide) in paragraph at lines 59--65
-[]\OT1/cmr/m/n/10 GD ex-per-i-ments will be car-ried out on 28 boronized graphite sam-ples, grouped
- []
-
-[2] (./plan.bbl
-Underfull \hbox (badness 1824) in paragraph at lines 14--17
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] (./plan.bbl
+Underfull \hbox (badness 1824) in paragraph at lines 19--22
 \OT1/cmr/m/n/10 Brakel, Se-basti-jan Brezin-sek, An-dreas Din-klage, Heinz Grote, Joris
  []
 
-) [3] (./plan.aux)
+[3]) [4] (./plan.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 1184 strings out of 476076
- 17694 string characters out of 5793775
+ 1185 strings out of 476076
+ 17705 string characters out of 5793775
  1934187 words of memory out of 5000000
- 23340 multiletter control sequences out of 15000+600000
+ 23341 multiletter control sequences out of 15000+600000
  563490 words of font info for 55 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 56i,8n,65p,293b,197s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 56i,8n,65p,293b,225s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on plan.pdf (3 pages, 118460 bytes).
+Output written on plan.pdf (4 pages, 119474 bytes).
 PDF statistics:
- 59 PDF objects out of 1000 (max. 8388607)
- 35 compressed objects within 1 object stream
+ 62 PDF objects out of 1000 (max. 8388607)
+ 37 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

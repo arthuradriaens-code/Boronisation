@@ -14,11 +14,14 @@
          \hline
          Amount & kind of samples & need & project & TOMAS days \\ [0.5ex]
          \hline\hline
-         28 & boronized graphite & H \& He and H+He GD & W7-X & 6 \\
-         20 & hydrogen doped boronized graphite & He ICWC & W7-X & 4 \\
+         22 & boronized graphite & H \& He and H+He GD & W7-X & 6 \\
+         24 & hydrogen doped boronized graphite & H \& H+He ICWC & W7-X & 9 \\
          \hline
     \end{tabular}
 \end{center}
+The boronized graphite (non-doped) is ideally made as soon as possible,
+instructions on when the hydrogen doped boronized graphite should be made will
+follow.
 \section{Scientific relevance and reasoning}
 W7-X employs weekly Glow Discharge (GD) in H$_2$ and daily in helium for
 impurity and hydrogen removal respectively \cite{AndreiNucMatEn}. and Electron
@@ -39,56 +42,62 @@ effectiveness of the erosion codes, enabling it's deployment on W7-X
 measured/calculated wall fluxes.
 
 \subsection*{hydrogen doped boronized graphite}
-W7-X has diverted EC plasma, as such only the divertor area
-is conditioned by ECWC which erodes the boron layer within seconds.
-As such it is not relevant to study ECWC on TOMAS, and we will focus on
-ICWC.
-% which may provide a more efficient cleanup \cite{WEGAIC}. As preparations for
-%the possible usage of ICWC in W7-X 
-We wish to observe a time law for de-trapping to interpolate to W7-X.
+W7-X has diverted EC plasma, this means that the divertor area is the only part
+conditioned by ECWC which erodes the present boron layer within seconds.  As
+such it is not relevant to study ECWC on TOMAS, and we will focus on ICWC.  The
+ICWC settings used for the exposures at TOMAS cannot directly mimick W7-X,
+TOMAS lacks in power and magnetic field strength and as such doesn't have the
+same heating fundamentals and wall conditioning scenario.  However it is
+possible to compare the two, mainly by predicting the de-trapping rate
+according to relevant pde's, as e.g mentioned in McCracken\cite{McCRACKEN}.
+Observing these kinds of rates in W7-X relevant ICWC plasmas at TOMAS would
+make it possible to interpolate to W7-X itself given the right amount of insight.
 \section{TOMAS setup and days estimate}
-\subsection*{GD}
+\subsection*{GDWC}
 The GD settings used at TOMAS will mimick the ones used in W7-X, namely 1.5A
 $\approx300$V at $\approx4.5\times10^{-3}$mbar  for H$_2$ and 1.0A $\approx
-200$V at $\approx 3.5\times10^{-3}$mbar for He\cite{AndreiNucMatEn}.  As the
+200$V at $\approx 3.5\times10^{-3}$mbar for He\cite{AndreiNucMatEn} and one with
+both H and He.  As the
 current and voltage relate via ohms law it might not be possible to exactly
-reproduce both the current and voltage. As classically sputtering is linear
-with flux (or current) and a power law with energy, matching the voltage is 
+reproduce both the current and voltage. As sputtering rates are predicted to be linear
+with flux (or current) but behave as a power law with energy, matching the voltage is 
 of higher importance.
 
-GD experiments will be carried out on 28 boronized graphite samples, grouped 4
-per shot for 7 shots. 4 samples per exposures to have reasonable statistics and
-4 exposures for different energies each to have reasonable confidence in the
-yield-energy curve form.  Furthermore 4 samples per exposure for 3 exposures
-will be conducted for yield-time estimation (should be linear, extra
-measurement for validation).
-\subsection*{EC}
-EC experiments will be carried out on 20 hydrogen-doped boronized graphite
-samples, grouped 4 per shot for 6 shots to have sufficient statistics
-in outgassing per time and in the observation of the time law.
-\subsection*{Both}
+There are thus three main scenarios, for each of these we will expose 6 samples
+and 2 dummy (non-coated) samples. Additionally 4 samples will serve as control
+samples, which won't be exposed to see if atmospheric effects deteriorate the
+sample. In total we thus require 22 samples.  Each exposure will take one day
+with a preperatory day and as such this will take 6 days in TOMAS time.
+\subsection*{ICWC}
+The ICWC settings at TOMAS will mimick W7-X where it can, namely the frequency
+of the ICRF antenna will be set to 38MHz, keeping the pressure at the sample
+manipulator as as close to the ones used in W7-X's wall as possible. The gasses
+used will be once helium and once helium+hydrogen. To interpolate power
+differences need to be observed as well as time traces. As such with two gasses 
+each having one time trace at maximum power of at least 4 exposures and one energy
+trace of at least 4 exposures, each hosting 3 samples (to have a simple error estimate)
+the total amount of samples comes to $2\times 2\times 4\times 3=24$ samples which
+should take 9 days to expose.
+\subsection*{How the days are estimated}
 The days estimate comes from the possibility to do 2 exposures per day,
 with one day of preparatory work, calculated on a maximum of 3 exposure days per week.
 During experiments the QMS, the MW interferometer and optical spectroscopy will
 be acquiring data.
 \section{Sample analysis}
-Most of this will be outsourced to experts within FZJ whom will
-be credited appropriately. 
-On the non-doped samples mainly erosion will be measured while on the doped samples outgassing
-will be measured. On the erosion samples other measurements will also be performed
+\subsection*{GD erosion rates}
+As it might be interesting in the erosion predictions, surface roughness will also be measured
+(as it may affect the rapidity), in total the steps are:
 \begin{enumerate}
-    \item roughness measurement before and after
-    \item (if adequate) ellipsometry before and after
-    \item FIBSEM after and on one control
+    \item roughness measurement before exposure (using a profilometer at the mirror lab)
+    \item (if adequate) ellipsometry before exposure (mirror lab)
+    \item exposure to relevant conditions
+    \item rougness measurement after exposure (using a profilometer at the mirror lab)
+    \item (if adequate) ellipsometry after exposure (mirror lab)
+    \item FIBSEM after exposure (dr. Rasinski)
 \end{enumerate}
-\subsection{Roughness measurements}
-The exposure to the plasma may give inhomogeneous sputtering which might be
-of interest, as such a simple 1D profilometry measurement may be made before
-and after exposure, or, if needed, a full 2D surface map. Both of the needed
-devices are located in the mirror lab overseen by dr. Litnovsky.
-\subsection{Thickness estimate}
-Thickness estimates may be made using ellipsometry on the non-doped specimens prior
-to the exposure and after exposure prior to being analysed using FIBSEM (dr.Rasinski).
+\subsection*{De-trapping amount}
+Dr. Houben may be able to measure the amount of trapped hydrogen before and after exposure using
+thermal desorption, if this is not the case, or if it may be less accurate, IBA should probably be used.
 \bibliographystyle{plain}
 \bibliography{sources}
 \end{document}
