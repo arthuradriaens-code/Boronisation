@@ -15,7 +15,7 @@
          Amount & kind of samples & need & project & TOMAS days \\ [0.5ex]
          \hline\hline
          22 & boronized graphite & H \& He and H+He GD & W7-X & 6 \\
-         24 & hydrogen doped boronized graphite & H \& H+He ICWC & W7-X & 9 \\
+         24 & hydrogen doped boronized graphite & H \& H+He ICWC & W7-X & 8 \\
          \hline
     \end{tabular}
 \end{center}
@@ -23,64 +23,63 @@ The boronized graphite (non-doped) is ideally made as soon as possible,
 instructions on when the hydrogen doped boronized graphite should be made will
 follow.
 \section{Scientific relevance and reasoning}
-W7-X employs weekly Glow Discharge (GD) in H$_2$ and daily in helium for
-impurity and hydrogen removal respectively \cite{AndreiNucMatEn}. and Electron
-Cyclotron Wall Conditioning (ECWC) in H and He plasma (in the form of pulse trains)
-is applied for density control in hydrogen plasmas during experimental days, 
-its effects have been reported (\cite{Goriaev_2020},\cite{WAUTERS2018235} and
-EUROFUSION WPS1-PR(16) 16175). Eventually, W7-X will leverage the ICRF
-antenna to perform ICWC.
+W7-X  employs Glow Discharge Cleaning in hydrogen and helium in the initial
+wall conditioning  stage after the vacuum vessel venting. It is also conducted
+weekly in hydrogen to further improve the wall conditions and daily in helium
+to desaturate the walls from hydrogen\cite{AndreiNucMatEn} unless the
+hydrogen/helium ratio is desired to be close to 1 in the constitutive
+experiments. The GDC cleaning is done only before the first boronization. After
+the boronization it is suspended to avoid a possible boron layer erosion.
+However, it is not scientifically proven. ECWC in the form of pulse trains is
+used in helium or hydrogen to establish the density control throughout
+experimental days (\cite{Goriaev_2020},\cite{WAUTERS2018235} and
+EUROFUSION WPS1-PR(16) 16175). The installed ICRH antenna provides an opportunity to
+employ ICWC, which should be more effective than ECWC, and, moreover can be used when
+ECWC is not operable, for example at low (1.7/1.8 T) magnetic field operation.
+Since the mechanism of ICWC for W7-X is supposed to rely on moderate fluxes of
+charge-exchange neutrals, it can also contribute to the erosion of the boron
+layers in the main PFCs.
 
 \subsection*{boronized graphite}
-The interaction of the hot plasmas will erode the first (boronized) wall, it
-would be interesting to be able to predict to what extend, to this end we will
-measure ion energy distributions for W7-X relevant GD settings using the
-Retarding Field Energy Analyzer (RFEA) and expose samples for chosen
-environments. The aim is to then predict with an erosion code like ERO or
-rustBCA the observed erosion. If this is possible, it would showcase the
-effectiveness of the erosion codes, enabling it's deployment on W7-X
-measured/calculated wall fluxes.
+As mentioned GD is avoided except prior to the  first boronisation as it is
+thought to erode the wall, it would be interesting to be able to predict to
+what extend, to this end we will measure ion energy distributions for W7-X
+relevant GD settings using the Retarding Field Energy Analyzer (RFEA) and
+expose samples for chosen environments.  As the GD system on tomas and the one
+on W7-X are the same with just a smaller volume, measurements obtained on TOMAS
+directly predicts what will be observed at W7-X.
 
+As we have a RFEA and ToF-NPA, we also aim to predict with an erosion code like
+ERO or rustBCA the (possibly) observed erosion. 
 \subsection*{hydrogen doped boronized graphite}
 W7-X has diverted EC plasma, this means that the divertor area is the only part
 conditioned by ECWC which erodes the present boron layer within seconds.  As
 such it is not relevant to study ECWC on TOMAS, and we will focus on ICWC.  The
-ICWC settings used for the exposures at TOMAS cannot directly mimick W7-X,
-TOMAS lacks in power and magnetic field strength and as such doesn't have the
-same heating fundamentals and wall conditioning scenario.  However it is
-possible to compare the two, mainly by predicting the de-trapping rate
-according to relevant pde's, as e.g mentioned in McCracken\cite{McCRACKEN}.
-Observing these kinds of rates in W7-X relevant ICWC plasmas at TOMAS would
-make it possible to interpolate to W7-X itself given the right amount of insight.
+ICWC settings used for the exposures at TOMAS, due to low confinement, may
+mimick at TOMAS's sample manipulator, the charge-exchange flux at the edge of
+W7-X.  We will also attempt to predict de-trapping rates using rustBCA.
 \section{TOMAS setup and days estimate}
 \subsection*{GDWC}
 The GD settings used at TOMAS will mimick the ones used in W7-X, namely 1.5A
 $\approx300$V at $\approx4.5\times10^{-3}$mbar  for H$_2$ and 1.0A $\approx
 200$V at $\approx 3.5\times10^{-3}$mbar for He\cite{AndreiNucMatEn} and one with
-both H and He.  As the
-current and voltage relate via ohms law it might not be possible to exactly
-reproduce both the current and voltage. As sputtering rates are predicted to be linear
-with flux (or current) but behave as a power law with energy, matching the voltage is 
-of higher importance.
-
+both H and He.  
 There are thus three main scenarios, for each of these we will expose 6 samples
 and 2 dummy (non-coated) samples. Additionally 4 samples will serve as control
 samples, which won't be exposed to see if atmospheric effects deteriorate the
 sample. In total we thus require 22 samples.  Each exposure will take one day
 with a preperatory day and as such this will take 6 days in TOMAS time.
 \subsection*{ICWC}
-The ICWC settings at TOMAS will mimick W7-X where it can, namely the frequency
-of the ICRF antenna will be set to 38MHz, keeping the pressure at the sample
-manipulator as as close to the ones used in W7-X's wall as possible. The gasses
-used will be once helium and once helium+hydrogen. To interpolate power
-differences need to be observed as well as time traces. As such with two gasses 
-each having one time trace at maximum power of at least 4 exposures and one energy
-trace of at least 4 exposures, each hosting 3 samples (to have a simple error estimate)
-the total amount of samples comes to $2\times 2\times 4\times 3=24$ samples which
-should take 9 days to expose.
+The ICWC settings at TOMAS will mimick W7-X where it can, namely the
+frequencies of the ICRF antenna will be 25MHz and 38MHz, keeping the pressure
+at the sample manipulator as close to the ones used in W7-X's wall as possible.
+The gasses used will be once helium and once helium+hydrogen. As such with two
+gasses each having two frequencies each hosting 6 samples (to have good
+statistical accuracy) the total amount of samples comes to $2\times 2\times
+6=24$ samples which should take 8 days to expose.
 \subsection*{How the days are estimated}
-The days estimate comes from the possibility to do 2 exposures per day,
-with one day of preparatory work, calculated on a maximum of 3 exposure days per week.
+The days estimate comes from the possibility to do 1 exposures per day,
+with one day of preparatory work, calculated on a maximum of 3 exposures per week.
 During experiments the QMS, the MW interferometer and optical spectroscopy will
 be acquiring data.
 \section{Sample analysis}
@@ -96,8 +95,9 @@ As it might be interesting in the erosion predictions, surface roughness will al
     \item FIBSEM after exposure (dr. Rasinski)
 \end{enumerate}
 \subsection*{De-trapping amount}
-Dr. Houben may be able to measure the amount of trapped hydrogen before and after exposure using
-thermal desorption, if this is not the case, or if it may be less accurate, IBA should probably be used.
+Dr. Houben may be able to measure the amount of trapped hydrogen before and
+after exposure using thermal desorption, if this is not the case, or if it may
+be less accurate, IBA methods should probably be used.
 \bibliographystyle{plain}
 \bibliography{sources}
 \end{document}
