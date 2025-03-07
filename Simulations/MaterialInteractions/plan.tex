@@ -1,0 +1,58 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\title{Predicting Wall Conditioning}
+\author{Arthur Adriaens}
+
+\begin{document}
+\maketitle
+\section*{\textit{Theory}}
+When a material has been subjected to impurities, these impurities will be
+stored in interstitial lattice sites  (LS). The base material atoms are bound by a
+certain energy $E_b$ whilst the trapped impurity is bound by $E_t$, as most
+often $E_t>E_b$, wall conditioning in fusion reactors is effective.  In general
+wall conditioning creates low-energy charge exchange neutrals (i.e neutrals who
+have gained their energy through charge exchange) who, as they are not
+confined, go towards the wall. Ideally these neutrals have energies sufficient
+to de-trap (sputter) the impurities but low enough energies to leave the base
+material intact.  Mathematically we can express the amount of impurities
+leaving the wall as:
+\begin{equation}
+    I(t) = \sum_j\int_E Y_{jI}(E,t)\mathfrak{F}_j(E)
+\end{equation}
+Whereby $Y_{Ij}(E,t)$ is the energy and time-dependent impurity sputtering rate
+(this is time-dependent as the impurity concentration will decrease over time)
+for incoming species j and $\mathfrak{F}_j(E)$ is the incoming particle
+distribution (particles/s) for species j.  The base material sputtering rate
+may be given by:
+\begin{equation}
+    B = \sum_j\int_E Y_{jB}(E)\mathfrak{F}_j(E)
+\end{equation}
+Where in the base material sputtering rate may be assumed to not be
+time-dependent as the material is homogeneous.  In full the total amount of
+particles leaving the wall per second is thus:
+\begin{equation}
+    W(t) \stackrel{\Delta}{=} I(t) + B = \sum_j \int_E \left\{ Y_{jI}(E,t) + Y_{jB}(E) \right\} \mathfrak{F}_j(E)
+\end{equation}
+$\mathfrak{F}_j(E)$ is a measureable quantity, for example on TOMAS the neutral
+fluxes are measureable \cite{DanielNPA} as well as the ions \cite{AndreiRFEA}.
+$Y_{jB}$ Is straightforward to simulate using e.g rustBCA using known
+material parameters, the difficulty lies in simulating $Y_{jI}$.
+\section*{\textit{Simulation input}}
+To simulate $Y_{jI}$ it is necessary to create a model, this model
+consists of a slab of the base material with a certain concentration
+of $E_t$ bound impurities. A simple first step would be to consider
+the impurities to be homogeneously distributed in the slab.
+%\section*{\textit{temp}}
+%As is well known, when a material is subjected to a plasma a sheath forms
+%abiding by Poisson's equation
+%\begin{equation}
+%    \chi^{\prime\prime} = \left( 1 + \frac{2\chi}{\mathfrak{M}^2}\right)^{-\frac{1}{2}} - e^{-\chi}
+%\end{equation}
+%with 
+%\begin{equation*}
+%    \chi \stackrel{\Delta}{=} - \frac{e\phi}{KTe} \qquad \epsilon \stackrel{\Delta}{=} \frac{x}{\lambda_D} = x\left(\frac{n_0e^2}{\epsilon_0 KT_e}\right)^{1/2} \qquad \mathfrak{M} \stackrel{\Delta}{=} \frac{u_0}{(KTe/M)^{1/2}}
+%\end{equation*}
+\bibliographystyle{plain}
+\bibliography{sources}
+\end{document}
