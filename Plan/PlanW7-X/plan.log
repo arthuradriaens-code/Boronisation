@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.2.24)  7 MAR 2025 13:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.2.24)  12 MAR 2025 14:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -124,13 +124,13 @@ L3 programming layer <2024-02-20>
 Here is how much of TeX's memory you used:
  1184 strings out of 476076
  17694 string characters out of 5793775
- 1933187 words of memory out of 5000000
+ 1934187 words of memory out of 5000000
  23340 multiletter control sequences out of 15000+600000
  563490 words of font info for 55 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  56i,8n,65p,293b,197s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on plan.pdf (3 pages, 118744 bytes).
+Output written on plan.pdf (3 pages, 118836 bytes).
 PDF statistics:
  59 PDF objects out of 1000 (max. 8388607)
  35 compressed objects within 1 object stream
