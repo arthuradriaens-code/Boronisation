@@ -1,0 +1,66 @@
+[options]
+name = "outputs/30-70eV_0.0001deg_H_B(H)_C"
+track_trajectories = false
+track_recoils = true
+track_recoil_trajectories = false
+write_buffer_size = 8000
+weak_collision_order = 3
+suppress_deep_recoils = false
+high_energy_free_flight_paths = false
+electronic_stopping_mode = "LOW_ENERGY_NONLOCAL"
+mean_free_path_model = "LIQUID"
+interaction_potential = [["KR_C"]]
+scattering_integral = [["MENDENHALL_WELLER"]]
+use_hdf5 = false
+root_finder = [[{"NEWTON"={max_iterations=100, tolerance=1E-6}}]]
+num_threads = 20
+num_chunks = 10
+track_displacements = false
+track_energy_losses = false
+energy_min = 30
+energy_max = 70
+energy_num = 40
+angle_min = 0.0
+angle_max = 0.0001
+angle_num = 1
+x_min = 0.0
+y_min = 0.0
+z_min = 0.0
+x_max = 0.0
+y_max = 0.0
+z_max = 0.0
+x_num = 1
+y_num = 1
+z_num = 1
+
+[particle_parameters]
+length_unit = "MICRON"
+energy_unit = "EV"
+mass_unit = "AMU"
+N = [ 100000,]
+m = [ 1.0079,]
+Z = [ 1,]
+E = [ 50,]
+Es = [ 1.5,]
+Ec = [ 0.95,]
+Eb = [ 3.0,]
+pos = [ [ -1.745329251993443e-8, 0.0, 0.0,],]
+dir = [ [ 0.999, 0.001, 0.0,],]
+
+[geometry_input]
+length_unit = "ANGSTROM"
+densities = [ [ 0.115864, 0.01, 0.0,], [ 0.0, 0.0, 0.1143511,],]
+layer_thicknesses = [1000, 10000]
+electronic_stopping_correction_factors = [1.0, 1.0, 1.0]
+
+[material_parameters]
+energy_unit = "EV"
+mass_unit = "AMU"
+Eb = [ 0.0,0.0,3.0]
+Es = [ 5.77,1.5,7.37]
+Ec = [ 5.0,0.95,1.0]
+Z = [ 5,1.0,6]
+m = [ 10.811,1.008,12.011]
+interaction_index = [0, 0, 0]
+surface_binding_model = {"PLANAR"={calculation="TARGET"}}
+bulk_binding_model = "AVERAGE"

@@ -8,41 +8,56 @@
 \maketitle
 \section*{\textit{Theory}}
 When a material has been subjected to impurities, these impurities will be
-stored in interstitial lattice sites  (LS). The base material atoms are bound by a
-certain energy $E_b$ whilst the trapped impurity is bound by $E_t$, as most
-often $E_t>E_b$, wall conditioning in fusion reactors is effective.  In general
-wall conditioning creates low-energy charge exchange neutrals (i.e neutrals who
-have gained their energy through charge exchange) who, as they are not
-confined, go towards the wall. Ideally these neutrals have energies sufficient
-to de-trap (sputter) the impurities but low enough energies to leave the base
-material intact.  Mathematically we can express the amount of impurities
-leaving the wall as:
+stored in interstitial lattice sites  (LS). The base material atoms are bound
+by a certain energy $E_b$ whilst the trapped impurity is bound by $E_t$, as
+most often $E_t>E_b$, wall conditioning in fusion reactors is effective.  In
+general wall conditioning creates low-energy charge exchange neutrals (i.e
+neutrals who have gained their energy through charge exchange) who, as they are
+not confined, move towards the wall. Ideally these neutrals have energies
+sufficient to de-trap (sputter) the impurities but are still below the energy
+necessary to sputter the base material.  Mathematically we can express the
+amount of impurities leaving the wall as a functional of the form:
 \begin{equation}
-    I(t) = \sum_j\int_E Y_{jI}(E,t)\mathfrak{F}_j(E)
+    \mathcal{I}[n] = \sum_j\int_E \int_\theta Y_{jI}(n(t,\mathbf{r}),E,\theta)\mathfrak{F}_j(E,\theta)
 \end{equation}
-Whereby $Y_{Ij}(E,t)$ is the energy and time-dependent impurity sputtering rate
-(this is time-dependent as the impurity concentration will decrease over time)
-for incoming species j and $\mathfrak{F}_j(E)$ is the incoming particle
-distribution (particles/s) for species j.  The base material sputtering rate
-may be given by:
+Whereby $Y_{Ij}(E,\theta,n(t))$ is the energy, angle of incidence, and
+concentration dependent impurity sputtering rate (the concentration is
+time-dependent as will decrease over time) for incoming species j and
+$\mathfrak{F}_j(E,\theta)$ is the incoming particle distribution (particles/s)
+for species j.  The base material sputtering rate may be given by:
 \begin{equation}
-    B = \sum_j\int_E Y_{jB}(E)\mathfrak{F}_j(E)
+    B = \sum_j\int_\theta \int_E Y_{jB}(E,\theta)\mathfrak{F}_j(E,\theta)
 \end{equation}
 Where in the base material sputtering rate may be assumed to not be
-time-dependent as the material is homogeneous.  In full the total amount of
-particles leaving the wall per second is thus:
+time-dependent as the material is homogeneous and very large.  In full the
+total amount of particles leaving the wall per second is thus:
 \begin{equation}
-    W(t) \stackrel{\Delta}{=} I(t) + B = \sum_j \int_E \left\{ Y_{jI}(E,t) + Y_{jB}(E) \right\} \mathfrak{F}_j(E)
+    W(t) \stackrel{\Delta}{=} \mathcal{I}[n] + B = \sum_j \int_\theta \int_E \left\{ Y_{jI}(n(t,\mathbf{r}),E,\theta) + Y_{jB}(E,\theta) \right\} \mathfrak{F}_j(E,\theta)
 \end{equation}
-$\mathfrak{F}_j(E)$ is a measureable quantity, for example on TOMAS the neutral
-fluxes are measureable \cite{DanielNPA} as well as the ions \cite{AndreiRFEA}.
-$Y_{jB}$ Is straightforward to simulate using e.g rustBCA using known
-material parameters, the difficulty lies in simulating $Y_{jI}$.
-\section*{\textit{Simulation input}}
-To simulate $Y_{jI}$ it is necessary to create a model, this model
-consists of a slab of the base material with a certain concentration
-of $E_t$ bound impurities. A simple first step would be to consider
-the impurities to be homogeneously distributed in the slab.
+\section*{\textit{Simulation}} 
+To simulate $Y_{jI}$ it is necessary to create a model, the chosen model is 1D
+and consists of a slab of the base material with a certain concentration of
+$E_t$ bound impurities. A simple first step would be to consider the impurities
+to be homogeneously distributed in the slab.
+The amount of impurities in a slab of area A and depth D prior to any 
+wall conditioning may be given by
+$N_0 = n_0\times A \times D$, after one timestep $\Delta t$ the amount will have been reduced
+by $\sum_jY_{jI}(n(t),E,\theta)\bar{\mathfrak{F}}_j(E,\theta)\times A\times\Delta t\stackrel{\Delta}{=}A\bar{\mathcal{I}}[n(t)]\Delta t $ 
+whereby $\bar{\mathfrak{F}}_j(E,\theta)$ is the amount of particles of species j per unit area per second.
+The amount of impurities in the material follows:
+\begin{equation}
+    \frac{\text{d}N(t)}{\text{d}t} = AD\frac{\text{d}n(t)}{\text{d}t} = -A\bar{\mathcal{I}}[n(t)]
+\end{equation}
+We thus have that the concentration of impurities in the slab changes as 
+\begin{equation}
+    \frac{\text{d} n}{\text{d} t} = -\frac{\bar{\mathcal{I}}[n(t)]}{D}
+\end{equation}
+We need to solve this equation to determine the amount of impurities sputtered per second per unit area
+$\bar{\mathcal{I}}[n(t)]$, e.g forward euler we would start from a certain $n = n_0$ and change n according
+to
+\begin{equation}
+    \Delta n = -\frac{\bar{\mathcal{I}}[n(t)]}{D}\Delta t
+\end{equation}
 %\section*{\textit{temp}}
 %As is well known, when a material is subjected to a plasma a sheath forms
 %abiding by Poisson's equation
@@ -53,6 +68,17 @@ the impurities to be homogeneously distributed in the slab.
 %\begin{equation*}
 %    \chi \stackrel{\Delta}{=} - \frac{e\phi}{KTe} \qquad \epsilon \stackrel{\Delta}{=} \frac{x}{\lambda_D} = x\left(\frac{n_0e^2}{\epsilon_0 KT_e}\right)^{1/2} \qquad \mathfrak{M} \stackrel{\Delta}{=} \frac{u_0}{(KTe/M)^{1/2}}
 %\end{equation*}
+\section*{\textit{Compare with experiments}}
+$\mathfrak{F}_j(E) \stackrel{\Delta}{=} \int_\theta \mathfrak{F}_j(E,\theta)$ is
+a measureable quantity, for example on TOMAS the neutral fluxes are measureable
+\cite{DanielNPA} as well as the ions \cite{AndreiRFEA}. As such, an angle distribution needs
+to be chosen, e.g 
+\begin{equation}
+    \tilde{\mathfrak{F}}_j(E,\theta) \stackrel{\Delta}{=} \frac{2cos^2(\theta)}{\pi}\mathfrak{F}_j(E)
+\end{equation}
+$Y_{jB}$ on it's own is straightforward to simulate using e.g rustBCA using known material
+parameters, the difficulty lies in simulating the compound, and thus devising $Y_{jI}$.
+
 \bibliographystyle{plain}
 \bibliography{sources}
 \end{document}
