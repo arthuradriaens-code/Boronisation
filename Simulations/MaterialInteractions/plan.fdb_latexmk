@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex plan"] 1741880602.66412 "plan.aux" "plan.bbl" "plan" 1741880607.29787 0
+["bibtex plan"] 1742213681.57846 "plan.aux" "plan.bbl" "plan" 1742215992.70053 0
   "./sources.bib" 1741342392.00346 2640 9b2b0915e274ba5d07678280a0053c61 ""
   "/usr/share/texmf-dist/bibtex/bst/base/plain.bst" 1736268207 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "plan.aux" 1741880607.19138 157 0e6d541a25269cd89135895ce114af7c "pdflatex"
+  "plan.aux" 1742215992.59183 157 0b2df15ce7426e992bd1cc8b4db227b0 "pdflatex"
   (generated)
   "plan.bbl"
   "plan.blg"
   (rewritten before read)
-["pdflatex"] 1741880607.00735 "plan.tex" "plan.pdf" "plan" 1741880607.29796 0
+["pdflatex"] 1742215992.41022 "plan.tex" "plan.pdf" "plan" 1742215992.70071 0
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1736268207 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1736268207 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1736268207 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -46,6 +46,7 @@
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1736268207 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1736268207 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1736268207 32362 179c33bbf43f19adbb3825bb4e36e57a ""
+  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb" 1736268207 31809 8670ca339bf94e56da1fc21c80635e2a ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1736268207 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1736268207 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb" 1736268207 37944 359e864bd06cde3b1cf57bb20757fb06 ""
@@ -66,9 +67,9 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1736268207 41588 b43d3e860a4f94167ee1e725ff526a72 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1740389898.78749 5318467 8236939515598d005dfbcc2e1a40f206 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1740389871 7112995 b2281434e91a171df1e1f653389415e9 ""
-  "plan.aux" 1741880607.19138 157 0e6d541a25269cd89135895ce114af7c "pdflatex"
-  "plan.bbl" 1741880602.70238 817 7b2e7398c9038b3edb8325137bf6d800 "bibtex plan"
-  "plan.tex" 1741880605.86538 4600 f7805e698cf62ea7c63b4e99ce0c790f ""
+  "plan.aux" 1742215992.59183 157 0b2df15ce7426e992bd1cc8b4db227b0 "pdflatex"
+  "plan.bbl" 1742213681.61372 817 7b2e7398c9038b3edb8325137bf6d800 "bibtex plan"
+  "plan.tex" 1742215992.00083 4578 a5b9d790e87c4a2be0709a0c4c54eb93 ""
   (generated)
   "plan.aux"
   "plan.log"

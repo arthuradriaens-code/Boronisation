@@ -16,37 +16,39 @@ neutrals who have gained their energy through charge exchange) who, as they are
 not confined, move towards the wall. Ideally these neutrals have energies
 sufficient to de-trap (sputter) the impurities but are still below the energy
 necessary to sputter the base material.  Mathematically we can express the
-amount of impurities leaving the wall as a functional of the form:
+amount of impurities leaving the wall per area ($m^2$) as a functional of the form:
 \begin{equation}
     \mathcal{I}[n] = \sum_j\int_E \int_\theta Y_{jI}(n(t,\mathbf{r}),E,\theta)\mathfrak{F}_j(E,\theta)
 \end{equation}
-Whereby $Y_{Ij}(E,\theta,n(t))$ is the energy, angle of incidence, and
-concentration dependent impurity sputtering rate (the concentration is
-time-dependent as will decrease over time) for incoming species j and
-$\mathfrak{F}_j(E,\theta)$ is the incoming particle distribution (particles/s)
-for species j.  The base material sputtering rate may be given by:
+Whereby $Y_{Ij}(n(t,\mathbf{r}),E,\theta)$ is the impurity concentration-, energy- and
+angle of incidence-dependent impurity sputtering rate (i.e \#out/\#in) for
+incoming species j and $\mathfrak{F}_j(E,\theta)$ is the incoming particle
+distribution ($\frac{\text{particles}}{m^2s}$) for species j.  The base
+material sputtering rate may be given by:
 \begin{equation}
     B = \sum_j\int_\theta \int_E Y_{jB}(E,\theta)\mathfrak{F}_j(E,\theta)
 \end{equation}
-Where in the base material sputtering rate may be assumed to not be
-time-dependent as the material is homogeneous and very large.  In full the
-total amount of particles leaving the wall per second is thus:
+In full, the total amount of particles leaving the wall per second per unit area
+is thus:
 \begin{equation}
     W(t) \stackrel{\Delta}{=} \mathcal{I}[n] + B = \sum_j \int_\theta \int_E \left\{ Y_{jI}(n(t,\mathbf{r}),E,\theta) + Y_{jB}(E,\theta) \right\} \mathfrak{F}_j(E,\theta)
 \end{equation}
-\section*{\textit{Simulation}} 
+\newpage
+\section*{\textit{Simulation: homogeneous doping and erosion}} 
 To simulate $Y_{jI}$ it is necessary to create a model, the chosen model is 1D
 and consists of a slab of the base material with a certain concentration of
 $E_t$ bound impurities. A simple first step would be to consider the impurities
-to be homogeneously distributed in the slab.
+to be homogeneously distributed in the slab and to erode homogeneously.
 The amount of impurities in a slab of area A and depth D prior to any 
 wall conditioning may be given by
 $N_0 = n_0\times A \times D$, after one timestep $\Delta t$ the amount will have been reduced
-by $\sum_jY_{jI}(n(t),E,\theta)\bar{\mathfrak{F}}_j(E,\theta)\times A\times\Delta t\stackrel{\Delta}{=}A\bar{\mathcal{I}}[n(t)]\Delta t $ 
-whereby $\bar{\mathfrak{F}}_j(E,\theta)$ is the amount of particles of species j per unit area per second.
-The amount of impurities in the material follows:
+by $\sum_jY_{jI}(n(t),E,\theta)\mathfrak{F}_j(E,\theta)\times A\times\Delta t\stackrel{\Delta}{=}\mathcal{I}[n(t)]A\Delta t $ 
+whereby $\mathfrak{F}_j(E,\theta)$ is the amount of particles of species j per unit area per second.
+Keeping E constant, a simple RFEA simulation for hydrogen impact on boron with trapped oxygen
+shows a big angular dependence:
+The amount of impurities in the material thus follows (if we assume homogeneous erosion):
 \begin{equation}
-    \frac{\text{d}N(t)}{\text{d}t} = AD\frac{\text{d}n(t)}{\text{d}t} = -A\bar{\mathcal{I}}[n(t)]
+    \frac{\text{d}N(t)}{\text{d}t} = AD\frac{\text{d}n(t)}{\text{d}t} = -A\mathcal{I}[n(t)]
 \end{equation}
 We thus have that the concentration of impurities in the slab changes as 
 \begin{equation}
