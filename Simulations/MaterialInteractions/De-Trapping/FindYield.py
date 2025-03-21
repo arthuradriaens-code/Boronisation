@@ -106,25 +106,25 @@ if __name__ == '__main__':
     implanted = []
     energy = 100
     boronconcentration = 0.115864
-    concentration = boronconcentration#*0.01
-    #timesteps = np.linspace(0,0.01,100)
-    #Ibars = TimeEvolution(concentration,energy,40,timesteps)
-    #import csv
-    #with open('csvfiles/result.csv','w',newline='') as csvfile:
-    #    spamwriter = csv.writer(csvfile, delimiter=',', quotechar='|')
-    #    for i,timestep in enumerate(timesteps[1:len(Ibars)]):
-    #        spamwriter.writerow([timestep,Ibars[i+1]])
+    concentration = boronconcentration*0.02
+    timesteps = np.linspace(0,0.01,100)
+    Ibars = TimeEvolution(concentration,energy,40,timesteps)
+    import csv
+    with open('csvfiles/result.csv','w',newline='') as csvfile:
+        spamwriter = csv.writer(csvfile, delimiter=',', quotechar='|')
+        for i,timestep in enumerate(timesteps[1:len(Ibars)]):
+            spamwriter.writerow([timestep,Ibars[i+1]])
     #plt.plot(timesteps,Ibars,label='Ibar')
     #plt.plot(timesteps,powerlaw(timesteps,*popt),label='fit')
     #result = SimulateHOM(energy,40,concentration,10000)
-    angles = np.linspace(0.0001,89.0001,90)
-    for angle in angles:
-        result = SimulateHOM(energy,angle,concentration,10000)
-        impurities.append(result['sputtered impurities'])
-        base.append(result['sputtered boron'])
-        implanted.append(result['implanted ions'])
-    plt.plot(angles,impurities,label='impurities')
+    #angles = np.linspace(0.0001,89.0001,90)
+    #for angle in angles:
+    #    result = SimulateHOM(energy,angle,concentration,10000)
+    #    impurities.append(result['sputtered impurities'])
+    #    base.append(result['sputtered boron'])
+    ##    implanted.append(result['implanted ions'])
+    #plt.plot(angles,impurities,label='impurities')
     plt.plot(angles,base,label='boron')
-    plt.plot(angles,implanted,label='implanted')
+    #plt.plot(angles,implanted,label='implanted')
     plt.legend()
     plt.show()
