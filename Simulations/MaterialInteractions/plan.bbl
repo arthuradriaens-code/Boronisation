@@ -1,5 +1,15 @@
 \begin{thebibliography}{1}
 
+\bibitem{rustBCA}
+Jon.~T. Drobny and Davide Curreli.
+\newblock Rustbca: A high-performance binary-collision-approximation code for ion-material interactions.
+\newblock {\em Journal of Open Source Software}, 6(64):3298, 2021.
+
+\bibitem{Eckstein}
+Wolfgang Eckstein.
+\newblock {\em Computer simulation of ion-solid interactions}.
+\newblock Springer series in materials science. Springer, Berlin, Germany, 1991 edition, August 1991.
+
 \bibitem{AndreiRFEA}
 A.~Goriaev, K.~Crombé, D.~López-Rodríguez, S.~Möller, J.~Buermans, M.~Verstraeten, D.~Castaño Bradwil, L.~Dittrich, P.~Petersson, and Yu. Kovtun.
 \newblock First studies of local ion fluxes in radio frequency plasmas for ion cyclotron wall conditioning applications in the tomas device.
@@ -9,5 +19,11 @@ A.~Goriaev, K.~Crombé, D.~López-Rodríguez, S.~Möller, J.~Buermans, M.~Verstr
 D.~López-Rodríguez, K.~Crombé, A.~Goriaev, J.~Buermans, A.~Adriaens, Yu. Kovtun, L.~Dittrich, P.~Petersson, T.~Wauters, and S.~Brezinsek.
 \newblock Characterization of plasma parameters and neutral particles in microwave and radio frequency discharges in the toroidal magnetized system.
 \newblock {\em Review of Scientific Instruments}, 95(8):083542, 08 2024.
+
+\bibitem{BoronSubl}
+E.~Vietzke, V.~Philipps, and K.~Flaskamp.
+\newblock High temperature erosion of boron/carbon materials.
+\newblock {\em Journal of Nuclear Materials}, 196-198:1112--1117, 1992.
+\newblock Plasma-Surface Interactions in Controlled Fusion Devices.
 
 \end{thebibliography}

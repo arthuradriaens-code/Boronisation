@@ -4,12 +4,13 @@ from libRustBCA import *
 from scripts.materials import *
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
+from alive_progress import alive_bar
 
 
 def SimulateHOM(E,theta,n_i,N=10000):
     #example ions array like [[energy1,angle1],[energy2,angle2],...]
-    ion = hydrogen #inkomend deeltje
-    impurity = oxygen
+    ion = deuterium #inkomend deeltje
+    impurity = tritium
 
     angle = theta
     #In RustBCA's geometry, +x -> into the surface
@@ -17,12 +18,12 @@ def SimulateHOM(E,theta,n_i,N=10000):
     uy = np.sin(angle*np.pi/180.)*np.ones(N)
     uz = np.zeros(N)
 
-    Zmat = [5,oxygen['Z']]
-    mmat = [10.811,oxygen['m']]
-    Ecmat =[5.0,0.2]
-    Esmat =[5.76,0.2]
-    Ebmat =[0.0,0.0]
-    nmat = [[0.115864,n_i]] #density in #/angstroms^3
+    Zmat = [5,impurity['Z']]
+    mmat = [10.811,impurity['m']]
+    Ecmat =[0.1,0.1]
+    Esmat =[5.73,0.0]
+    Ebmat =[0.13,0.0]
+    nmat = [[0.06128,n_i]] #density in #/angstroms^3
     Dmat = [100]
 
     energies = np.ones(N)*E
@@ -47,7 +48,7 @@ def SimulateHOM(E,theta,n_i,N=10000):
     uz = output[:,8]
 
     #print(N - len(Z[np.where(np.array(stopped)==False)]))
-    impurities = len(np.where(Z[np.where(np.array(stopped)==False)]==8)[0])
+    impurities = len(np.where(Z[np.where(np.array(stopped)==False)]==impurity['Z'])[0])
     nboron = len(np.where(Z[np.where(np.array(stopped)==False)]==5)[0])
     implanted = len(np.where(Z[np.logical_and(incident, stopped)]==ion['Z'])[0])
     #print(x[np.where(Z[np.where(np.array(stopped)==False)]==8)[0]])
@@ -101,30 +102,36 @@ def powerlaw(xdata,amp,power,offset):
     return amp*(xdata**power) + offset
 
 if __name__ == '__main__':
+    timestep = False
     impurities = []
     base = []
     implanted = []
-    energy = 100
-    boronconcentration = 0.115864
-    concentration = boronconcentration*0.02
-    timesteps = np.linspace(0,0.01,100)
-    Ibars = TimeEvolution(concentration,energy,40,timesteps)
-    import csv
-    with open('csvfiles/result.csv','w',newline='') as csvfile:
-        spamwriter = csv.writer(csvfile, delimiter=',', quotechar='|')
-        for i,timestep in enumerate(timesteps[1:len(Ibars)]):
-            spamwriter.writerow([timestep,Ibars[i+1]])
-    #plt.plot(timesteps,Ibars,label='Ibar')
-    #plt.plot(timesteps,powerlaw(timesteps,*popt),label='fit')
-    #result = SimulateHOM(energy,40,concentration,10000)
-    #angles = np.linspace(0.0001,89.0001,90)
-    #for angle in angles:
-    #    result = SimulateHOM(energy,angle,concentration,10000)
-    #    impurities.append(result['sputtered impurities'])
-    #    base.append(result['sputtered boron'])
-    ##    implanted.append(result['implanted ions'])
-    #plt.plot(angles,impurities,label='impurities')
-    plt.plot(angles,base,label='boron')
-    #plt.plot(angles,implanted,label='implanted')
-    plt.legend()
-    plt.show()
+    energy = 50
+    boronconcentration = 0.06128
+    concentration = boronconcentration*0.2
+
+    if timestep:
+        timesteps = np.linspace(0,10,1000)
+        Ibars = TimeEvolution(concentration,energy,40,timesteps)
+        import csv
+        with open('csvfiles/result.csv','w',newline='') as csvfile:
+            spamwriter = csv.writer(csvfile, delimiter=',', quotechar='|')
+            for i,timestep in enumerate(timesteps[1:len(Ibars)]):
+                spamwriter.writerow([timestep,Ibars[i+1]])
+    else:
+        angles = np.linspace(0.001,89.0001,178)
+        with alive_bar(len(angles)) as bar:
+            for angle in angles:
+                result = SimulateHOM(energy,angle,concentration,50000)
+                impurities.append(result['sputtered impurities'])
+                base.append(result['sputtered boron'])
+                implanted.append(result['implanted ions'])
+                bar()
+        plt.plot(angles,impurities,label='released tritium')
+        plt.plot(angles,base,label='boron')
+        plt.plot(angles,implanted,label='implanted deuterium')
+        plt.xlabel('angle (degrees)')
+        plt.ylabel('atoms')
+        plt.title('effect of 50000 deuterium atoms at 50eV for different angles')
+        plt.legend()
+        plt.show()

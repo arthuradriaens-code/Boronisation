@@ -15,50 +15,41 @@ use_hdf5 = false
 root_finder = [[{"NEWTON"={max_iterations=100, tolerance=1E-6}}]]
 num_threads = 20
 num_chunks = 10
-track_displacements = false
-track_energy_losses = false
-angle_min = 0.02
-angle_max = 0.98
-angle_num = 97
-x_min = 0.0
-y_min = -0.1
-z_min = -0.1
-x_max = 0.1
-y_max = 0.1
-z_max = 0.1
-x_num = 20
-y_num = 20
-z_num = 20
+track_displacements = true
+track_energy_losses = true
+angle_min = 88.1
+angle_max = 89.1
+angle_num = 90.0
 
 [particle_parameters]
 length_unit = "ANGSTROM"
 energy_unit = "EV"
 mass_unit = "AMU"
-N = [ 10000,]
-m = [ 1.0079,]
-Z = [ 1,]
-E = [ 10,]
-Ec = [ 1.0,]
-Es = [ 0.0,]
-interaction_index = [ 0 ]
-pos = [ [ -1.75e-8, 0.0, 0.0,],]
-dir = [ [ 0.999, 0.001, 0.0,], ]
+N = [ 10000,10000,10000,]
+m = [ 2.0079,2.0079,2.0079,]
+Z = [ 1,1,1,]
+E = [ 50,50,50,]
+Ec = [ 0.1,0.1,0.1,]
+Es = [ 1.5,1.5,1.5,]
+interaction_index = [ 0,0,0 ]
+pos = [ [ -1.75e-8, 0.0, 0.0,],[ -1.75e-8, 0.0, 0.0,],[ -1.75e-8, 0.0, 0.0,]]
+dir = [ [ 0.999, 0.001, 0.0,],[ 0.509, 0.501, 0.0,],[ 0.299, 0.801, 0.0,] ]
 
 
 [geometry_input]
 length_unit = "ANGSTROM"
-densities = [ [ 0.06133662, 0.01, 0.0,], [ 0.0, 0.0, 0.1143511,],]
+densities = [ [ 0.06133662, 0.012, 0.0,], [ 0.0, 0.0, 0.1143511,],]
 layer_thicknesses = [1000, 10000]
 electronic_stopping_correction_factors = [1.0, 1.0, 1.0]
 
 [material_parameters]
 energy_unit = "EV"
 mass_unit = "AMU"
-Eb = [ 0.0,0.0,3.0]
-Es = [ 5.77,0.2,7.37]
-Ec = [ 5.0,0.2,5.0]
-Z = [ 5,8,6]
-m = [ 10.811,16,12.011]
+Eb = [ 0.13,0.0,3.0]
+Es = [ 5.73,0.0,7.37]
+Ec = [ 0.1,0.1,5.0]
+Z = [ 5,1,6]
+m = [ 10.811,2,12.011]
 interaction_index = [0, 0, 0]
 surface_binding_model = {"PLANAR"={calculation="TARGET"}}
 bulk_binding_model = "AVERAGE"
